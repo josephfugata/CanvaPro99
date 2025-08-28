@@ -12,27 +12,27 @@ const benefits: Benefit[] = [
   {
     icon: Sparkles,
     title: 'Magic Studio',
-    description: 'Access all the AI-powered Magic Studio tools to design and create content faster than ever.',
+    description: 'Gamitin lahat ng AI-powered Magic Studio tools para mas mabilis mag-design at gumawa ng content.',
   },
   {
     icon: Crown,
-    title: '100+ Million Pro Assets',
-    description: 'Unlimited access to our entire library of premium photos, videos, audio, and graphics.',
+    title: '100+ Milyong Pro Assets',
+    description: 'Walang limitasyong access sa buong library ng premium photos, videos, audio, at graphics.',
   },
   {
     icon: Scissors,
     title: 'Background Remover',
-    description: 'Instantly remove image and video backgrounds with a single click. Perfect for product shots.',
+    description: 'Tanggalin agad ang image at video backgrounds sa isang click lang. Perfect para sa product shots!',
   },
   {
     icon: FolderSync,
-    title: '1TB of Cloud Storage',
-    description: 'Enjoy a massive 1TB of cloud storage to save and manage all your creative projects securely.',
+    title: '1TB na Cloud Storage',
+    description: 'Enjoy sa 1TB na cloud storage para i-save at i-manage lahat ng projects mo nang safe.',
   },
   {
     icon: Users,
     title: 'Team Collaboration',
-    description: 'Work together seamlessly with your team in real-time on any design.',
+    description: 'Mag-work together nang real-time kasama ang team mo sa kahit anong design.',
   },
 ];
 
@@ -41,9 +41,9 @@ export default function Benefits() {
     <section id="benefits" className="w-full py-20 md:py-32 bg-secondary/50">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold">Everything You Love, and More</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold">Lahat ng Gusto Mo, at Higit Pa</h2>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">
-            From seasoned professionals to passionate beginners, Canva Pro supercharges your creativity and productivity.
+            Mula sa mga pro hanggang sa mga baguhan, palakasin ang iyong pagiging malikhain at pagiging produktibo with Canva Pro.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

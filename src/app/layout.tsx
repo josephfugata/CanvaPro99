@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 
 
 export const metadata: Metadata = {
-  title: 'CanvaPro99 Landing - Lifetime Canva Pro for P99',
-  description: 'Get lifetime access to Canva Pro for a one-time payment of only P99. Unlock premium features, millions of assets, and supercharge your creativity.',
+  title: 'CanvaPro99 Landing - Lifetime Canva Pro sa halagang P99 lang!',
+  description: 'Habang-buhay na access sa Canva Pro sa isang-beses na bayad na P99 lang. I-unlock ang lahat ng premium features at assets para sa iyong creativity.',
 };
 
 export default function RootLayout({

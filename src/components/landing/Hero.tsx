@@ -17,11 +17,11 @@ export default function Hero({ headline }: HeroProps) {
           {headline}
         </h1>
         <p className="max-w-xl text-lg text-muted-foreground mb-8">
-          Unlock your creative potential with every feature Canva Pro has to offer. One-time payment, lifetime access. Don't miss this incredible deal.
+          Ilabas ang iyong pagiging malikhain gamit ang lahat ng features ng Canva Pro. Isang beses lang magbayad, pang-habangbuhay na ang access. Huwag palampasin ang deal na 'to!
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-                <a href="#">Get Lifetime Access for P99</a>
+                <a href="#">Kunin ang Lifetime Access sa halagang P99</a>
             </Button>
         </div>
       </div>

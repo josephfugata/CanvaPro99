@@ -11,9 +11,9 @@ export default function ProTemplates() {
             <LayoutTemplate className="h-6 w-6" />
             <span className="font-semibold">PREMIUM TEMPLATES</span>
           </div>
-          <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Never Start With a Blank Page Again</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Huwag Magsimula sa Blangkong Page</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Gain access to over 610,000+ premium, professionally designed templates for any project you can imagine. Just pick a template, customize it, and you're done.
+            Magka-access sa mahigit 610,000+ premium, professionally designed na templates para sa kahit anong project na naiisip mo. Pumili lang ng template, i-customize, at tapos na!
           </p>
           <div className="space-y-4 mb-8">
             <div className="flex items-start gap-4">
@@ -21,8 +21,8 @@ export default function ProTemplates() {
                 <Files className="h-6 w-6" />
               </div>
               <div>
-                <h4 className="font-bold text-xl">Vast & Diverse Library</h4>
-                <p className="text-muted-foreground">Find the perfect template for presentations, social posts, videos, and more.</p>
+                <h4 className="font-bold text-xl">Malawak at Iba't-ibang Library</h4>
+                <p className="text-muted-foreground">Hanapin ang perfect template para sa presentations, social posts, videos, at marami pang iba.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -30,19 +30,19 @@ export default function ProTemplates() {
                 <Sparkles className="h-6 w-6" />
               </div>
               <div>
-                <h4 className="font-bold text-xl">New Designs Daily</h4>
-                <p className="text-muted-foreground">Our library is constantly updated with fresh, on-trend designs.</p>
+                <h4 className="font-bold text-xl">Mga Bagong Design Araw-araw</h4>
+                <p className="text-muted-foreground">Ang aming library ay laging updated sa mga bago at on-trend na designs.</p>
               </div>
             </div>
           </div>
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-            <a href="#cta">Unlock All Templates for P99</a>
+            <a href="#cta">I-unlock Lahat ng Templates for P99</a>
           </Button>
         </div>
         <div className="flex-1 flex justify-center items-center mt-8 md:mt-0">
           <Image
             src="https://picsum.photos/600/500?random=11"
-            alt="A collage of premium Canva templates"
+            alt="Isang collage ng mga premium Canva templates"
             width={600}
             height={500}
             data-ai-hint="design templates"

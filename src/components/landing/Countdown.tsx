@@ -15,10 +15,10 @@ export default function Countdown() {
 
         if (difference > 0) {
             timeLeft = {
-                Days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                Hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                Araw: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                Oras: Math.floor((difference / (1000 * 60 * 60)) % 24),
                 Mins: Math.floor((difference / 1000 / 60) % 60),
-                Secs: Math.floor((difference / 1000) % 60),
+                Seg: Math.floor((difference / 1000) % 60),
             };
         }
         return timeLeft;
@@ -55,11 +55,11 @@ export default function Countdown() {
                         <div className="text-center md:text-left">
                             <div className="inline-flex items-center bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold mb-4">
                                 <AlertTriangle className="h-4 w-4 mr-2" />
-                                Limited Time Offer
+                                Limited Time Offer!
                             </div>
-                            <h2 className="font-headline text-3xl md:text-4xl font-bold mb-2">The Clock is Ticking!</h2>
+                            <h2 className="font-headline text-3xl md:text-4xl font-bold mb-2">Paubos na ang Oras!</h2>
                             <p className="text-muted-foreground text-lg">
-                                This lifetime deal is disappearing fast. Secure your spot before it's too late and the price goes up forever.
+                                Ang lifetime deal na 'to ay mabilis na mawawala. Kunin mo na bago mahuli ang lahat at tumaas ang presyo forever.
                             </p>
                         </div>
                         <div className="flex flex-col gap-6">
@@ -74,12 +74,12 @@ export default function Countdown() {
                                         </div>
                                     ))
                                 ) : (
-                                    <div className="col-span-4 font-headline text-3xl font-bold text-primary">Time's Up!</div>
+                                    <div className="col-span-4 font-headline text-3xl font-bold text-primary">Oras na!</div>
                                 )}
                             </div>
                              <div>
                                 <div className="flex justify-between items-center mb-2">
-                                    <p className="text-sm font-semibold text-muted-foreground">Slots Remaining:</p>
+                                    <p className="text-sm font-semibold text-muted-foreground">Slots na natitira:</p>
                                     <p className="text-lg font-bold text-primary">{slotsLeft} / {totalSlots}</p>
                                 </div>
                                 <Progress value={slotsPercentage} className="h-3 bg-primary/20" />
@@ -87,11 +87,11 @@ export default function Countdown() {
                         </div>
                     </div>
                      <div className="bg-primary/10 p-6 flex flex-col md:flex-row items-center justify-center gap-4 text-center">
-                         <h3 className="font-headline text-xl md:text-2xl font-bold">Don't Miss Out!</h3>
+                         <h3 className="font-headline text-xl md:text-2xl font-bold">Huwag Magpahuli!</h3>
                         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 animate-pulse">
                             <a href="#cta">
                                 <Zap className="mr-2 h-5 w-5" />
-                                Claim Your P99 Lifetime Deal Now
+                                I-claim ang P99 Lifetime Deal Ngayon!
                             </a>
                         </Button>
                     </div>

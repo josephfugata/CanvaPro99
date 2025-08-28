@@ -11,33 +11,33 @@ interface Audience {
 const audiences: Audience[] = [
   {
     icon: Briefcase,
-    title: 'Marketers',
-    description: 'Create high-converting ads, social media campaigns, and marketing visuals in a flash.',
+    title: 'Mga Marketers',
+    description: 'Gumawa ng high-converting ads, social media campaigns, at marketing visuals nang mabilis.',
   },
   {
     icon: ShoppingBag,
-    title: 'Small Business Owners',
-    description: 'Build your brand identity, from logos to packaging, without hiring an expensive designer.',
+    title: 'Mga Small Business Owners',
+    description: 'Buuin ang iyong brand identity, mula logos hanggang packaging, nang hindi kumukuha ng mahal na designer.',
   },
   {
     icon: PenTool,
-    title: 'Content Creators',
-    description: 'Design eye-catching YouTube thumbnails, Instagram stories, and blog graphics.',
+    title: 'Mga Content Creators',
+    description: 'Mag-design ng agaw-pansing YouTube thumbnails, Instagram stories, at blog graphics.',
   },
   {
     icon: School,
-    title: 'Students & Educators',
-    description: 'Craft beautiful presentations, reports, and class materials that will impress.',
+    title: 'Mga Estudyante at Guro',
+    description: 'Gumawa ng magagandang presentasyon, reports, at class materials na kahanga-hanga.',
   },
   {
     icon: Clapperboard,
-    title: 'Video Editors',
-    description: 'Easily edit videos, add premium stock footage, and create professional intros.',
+    title: 'Mga Video Editors',
+    description: 'Madaling mag-edit ng videos, magdagdag ng premium stock footage, at gumawa ng professional intros.',
   },
   {
     icon: User,
-    title: 'Anyone with an Idea',
-    description: 'If you have a creative idea, Canva Pro gives you the power to bring it to life.',
+    title: 'Kahit Sino na May Ideya',
+    description: 'Kung mayroon kang creative na ideya, binibigyan ka ng Canva Pro ng kapangyarihang bigyan ito ng buhay.',
   },
 ];
 
@@ -46,9 +46,9 @@ export default function WhoIsItFor() {
     <section id="who-is-it-for" className="w-full py-20 md:py-32 bg-secondary/50">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold">Perfect for... Everyone!</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold">Perfect Para sa... Lahat!</h2>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">
-            Whether you're a professional or just starting, this lifetime deal is designed to help you succeed.
+            Propesyonal ka man o nagsisimula pa lang, ang lifetime deal na ito ay dinisenyo para tulungan kang magtagumpay.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

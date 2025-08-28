@@ -11,9 +11,9 @@ export default function ContentPlanner() {
             <CalendarDays className="h-6 w-6" />
             <span className="font-semibold">CONTENT PLANNER</span>
           </div>
-          <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Plan and Schedule Your Content</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">I-plano at I-schedule ang Content Mo</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Never miss a post again. Design, plan, and schedule your social media content directly from Canva to platforms like Instagram, Facebook, Pinterest, and more.
+            Wala nang mamimiss na post. Mag-design, mag-plano, at mag-schedule ng social media content mo direkta mula sa Canva papuntang Instagram, Facebook, Pinterest, at iba pa.
           </p>
           <div className="space-y-4 mb-8">
             <div className="flex items-start gap-4">
@@ -21,8 +21,8 @@ export default function ContentPlanner() {
                 <Clock className="h-6 w-6" />
               </div>
               <div>
-                <h4 className="font-bold text-xl">Automate Your Posting</h4>
-                <p className="text-muted-foreground">Set it and forget it. Schedule posts weeks or months in advance.</p>
+                <h4 className="font-bold text-xl">I-automate ang Pag-post</h4>
+                <p className="text-muted-foreground">Set it and forget it. Mag-schedule ng posts for weeks or months in advance.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -30,19 +30,19 @@ export default function ContentPlanner() {
                 <CheckCircle className="h-6 w-6" />
               </div>
               <div>
-                <h4 className="font-bold text-xl">See What's Coming Up</h4>
-                <p className="text-muted-foreground">The content calendar gives you a clear overview of your scheduled content.</p>
+                <h4 className="font-bold text-xl">Tingnan ang mga Susunod</h4>
+                <p className="text-muted-foreground">Sa content calendar, kitang-kita mo ang mga naka-schedule mong content.</p>
               </div>
             </div>
           </div>
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-            <a href="#cta">Organize My Content for P99</a>
+            <a href="#cta">Ayusin ang Content ko for P99</a>
           </Button>
         </div>
         <div className="flex-1 flex justify-center items-center mt-8 md:mt-0">
           <Image
             src="https://picsum.photos/600/500?random=9"
-            alt="Content planner showing a calendar of social media posts"
+            alt="Content planner na nagpapakita ng kalendaryo ng social media posts"
             width={600}
             height={500}
             data-ai-hint="content calendar"

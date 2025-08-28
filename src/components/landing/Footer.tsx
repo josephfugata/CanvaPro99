@@ -11,7 +11,7 @@ export default function Footer() {
             </p>
         </div>
         <p className="text-center text-xs text-muted-foreground">
-          This is an independent service and is not affiliated with Canva®.
+          Ito ay isang independent service at hindi affiliated sa Canva®.
         </p>
       </div>
     </footer>

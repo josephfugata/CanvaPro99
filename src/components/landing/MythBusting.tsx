@@ -6,36 +6,36 @@ export default function MythBusting() {
     <section id="myth-busting" className="py-20 md:py-32 bg-secondary/50">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold">Is This Too Good To Be True?</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold">Masyado bang Maganda para Maging Totoo?</h2>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">
-            We get it. You're skeptical. Let's address the elephant in the room and bust some common myths about this offer.
+            Gets namin. Nagdududa ka. Linawin natin ang mga bagay-bagay at sirain ang mga maling akala tungkol sa offer na 'to.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="bg-card/60 dark:bg-card/40 backdrop-blur-lg border-border/50 shadow-md p-6">
             <CardHeader>
                 <BadgeHelp className="h-12 w-12 text-primary mx-auto mb-4" />
-                <CardTitle className="font-headline text-2xl text-center">MYTH: "This can't be legal."</CardTitle>
+                <CardTitle className="font-headline text-2xl text-center">MALING AKALA: "Hindi 'to legal."</CardTitle>
               <CardDescription className="pt-4 text-base text-muted-foreground">
-                <strong>REALITY:</strong> It's 100% legitimate. We use Canva's official "Teams" feature to provide access. We purchase a large agency plan and share the slots, a method fully within Canva's terms for team invitations.
+                <strong>KATOTOHANAN:</strong> Ito ay 100% legitimate. Ginagamit namin ang official "Teams" feature ng Canva. Bumibili kami ng malaking agency plan at shinare namin ang slots, isang paraan na sakop ng terms ng Canva.
               </CardDescription>
             </CardHeader>
           </Card>
           <Card className="bg-card/60 dark:bg-card/40 backdrop-blur-lg border-border/50 shadow-md p-6">
             <CardHeader>
               <CircleDotDashed className="h-12 w-12 text-primary mx-auto mb-4" />
-              <CardTitle className="font-headline text-2xl text-center">MYTH: "I'll lose my designs."</CardTitle>
+              <CardTitle className="font-headline text-2xl text-center">MALING AKALA: "Mawawala mga design ko."</CardTitle>
               <CardDescription className="pt-4 text-base text-muted-foreground">
-                <strong>REALITY:</strong> You use your OWN Canva account. We simply invite it to our Pro team. All your existing designs, folders, and uploads remain safe, secure, and private to you.
+                <strong>KATOTOHANAN:</strong> Sarili mong Canva account ang gamit mo. Ini-invite ka lang namin sa aming Pro team. Lahat ng designs, folders, at uploads mo ay mananatiling safe, secure, at private sa'yo lang.
               </CardDescription>
             </CardHeader>
           </Card>
           <Card className="bg-card/60 dark:bg-card/40 backdrop-blur-lg border-border/50 shadow-md p-6">
             <CardHeader>
               <ThumbsUp className="h-12 w-12 text-primary mx-auto mb-4" />
-              <CardTitle className="font-headline text-2xl text-center">MYTH: "It will stop working."</CardTitle>
+              <CardTitle className="font-headline text-2xl text-center">MALING AKALA: "Titigil din 'to."</CardTitle>
               <CardDescription className="pt-4 text-base text-muted-foreground">
-                <strong>REALITY:</strong> We've built a sustainable service. The one-time fees from new members cover the team plan costs indefinitely. We guarantee access for 5 years, but plan for a true lifetime.
+                <strong>KATOTOHANAN:</strong> Nakagawa kami ng sustainable na serbisyo. Ang one-time fees mula sa mga bagong miyembro ang sumusoporta sa gastos ng team plan. Ginagarantiya namin ang access for 5 years, pero plano namin na ito'y pang-lifetime talaga.
               </CardDescription>
             </CardHeader>
           </Card>

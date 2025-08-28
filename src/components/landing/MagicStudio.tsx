@@ -11,9 +11,9 @@ export default function MagicStudio() {
             <Sparkles className="h-6 w-6" />
             <span className="font-semibold">MAGIC STUDIO</span>
           </div>
-          <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Your AI-Powered Design Assistant</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Ang Iyong AI-Powered Design Assistant</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Stop starting from scratch. Let Magic Studio generate designs, write copy, create images, and even generate entire videos from a simple prompt. It's the ultimate creative shortcut.
+            Huwag nang magsimula sa simula. Hayaan ang Magic Studio na gumawa ng designs, magsulat ng copy, lumikha ng mga imahe, at kahit buong video mula sa isang simpleng prompt. Ito ang ultimate creative shortcut.
           </p>
           <div className="space-y-4 mb-8">
             <div className="flex items-start gap-4">
@@ -22,7 +22,7 @@ export default function MagicStudio() {
               </div>
               <div>
                 <h4 className="font-bold text-xl">Magic Design</h4>
-                <p className="text-muted-foreground">Instantly generate a selection of templates customized to your idea.</p>
+                <p className="text-muted-foreground">Agad-agad na gumawa ng mga templates na customized para sa idea mo.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -31,7 +31,7 @@ export default function MagicStudio() {
               </div>
               <div>
                 <h4 className="font-bold text-xl">Magic Media</h4>
-                <p className="text-muted-foreground">Turn text into compelling photos and videos in seconds.</p>
+                <p className="text-muted-foreground">Gawing compelling photos at videos ang text sa loob lang ng ilang segundo.</p>
               </div>
             </div>
              <div className="flex items-start gap-4">
@@ -40,18 +40,18 @@ export default function MagicStudio() {
               </div>
               <div>
                 <h4 className="font-bold text-xl">Magic Write</h4>
-                <p className="text-muted-foreground">Generate powerful copy, from headlines to entire paragraphs.</p>
+                <p className="text-muted-foreground">Gumawa ng malakas na copy, mula headlines hanggang buong paragraphs.</p>
               </div>
             </div>
           </div>
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-            <a href="#cta">Experience the Magic for P99</a>
+            <a href="#cta">Subukan ang Magic for P99</a>
           </Button>
         </div>
         <div className="flex-1 flex justify-center items-center mt-8 md:mt-0">
           <Image
             src="https://picsum.photos/600/500?random=7"
-            alt="AI generating creative designs"
+            alt="AI gumagawa ng creative designs"
             width={600}
             height={500}
             data-ai-hint="ai design"

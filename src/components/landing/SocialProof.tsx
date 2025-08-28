@@ -7,19 +7,19 @@ const testimonials = [
     name: 'Sarah L.',
     avatar: '/Digital Marketer.png',
     title: 'Digital Marketer',
-    testimonial: 'The lifetime deal for Canva Pro is insane! It has all the features I need for my clients. An absolute game-changer for my workflow.',
+    testimonial: 'Grabe, sobrang sulit ng lifetime deal for Canva Pro! Andito lahat ng kailangan ko para sa mga kliyente ko. Game-changer sa workflow ko!',
   },
   {
     name: 'John D.',
     avatar: '/Startup Founder.png',
     title: 'Startup Founder',
-    testimonial: 'I was hesitant at first, but this is legit. For P99, I got full access to everything. Best investment for my startup\'s design needs.',
+    testimonial: 'Nag-aalangan ako nung una, pero legit pala! Sa P99, full access na sa lahat. Best investment para sa design needs ng startup ko.',
   },
   {
     name: 'Emily R.',
     avatar: '/Content Creator.png',
     title: 'Content Creator',
-    testimonial: 'I can finally use all the premium templates and fonts without worrying about monthly fees. This offer is a dream come true for creators on a budget.',
+    testimonial: 'Sa wakas, magagamit ko na lahat ng premium templates at fonts nang hindi nag-aalala sa monthly fees. Dream come true para sa mga creator na on a budget!',
   },
 ];
 
@@ -28,9 +28,9 @@ export default function SocialProof() {
     <section id="testimonials" className="py-20 md:py-32">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold">Loved by Creatives Everywhere</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold">Suki ng mga Creatives</h2>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">
-            Don't just take our word for it. Here's what our customers are saying.
+            Huwag lang kami ang pakinggan. Ito ang sinasabi ng aming mga customers.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -6,37 +6,37 @@ const useCases = [
     title: 'Social Media Posts',
     image: 'https://picsum.photos/400/300?random=1',
     hint: 'social media',
-    description: 'Create stunning graphics for Instagram, Facebook, and more in minutes.'
+    description: 'Gumawa ng magagandang graphics para sa Instagram, Facebook, at iba pa in minutes.'
   },
   {
     title: 'Marketing Materials',
     image: 'https://picsum.photos/400/300?random=2',
     hint: 'business flyers',
-    description: 'Design professional flyers, brochures, and business cards that stand out.'
+    description: 'Mag-design ng professional flyers, brochures, at business cards na agaw-pansin.'
   },
   {
     title: 'Video Presentations',
     image: 'https://picsum.photos/400/300?random=3',
     hint: 'presentation slide',
-    description: 'Craft engaging video slideshows and presentations for work or school.'
+    description: 'Bumuo ng engaging video slideshows at presentations para sa trabaho o eskwela.'
   },
   {
     title: 'Logos & Branding',
     image: 'https://picsum.photos/400/300?random=4',
     hint: 'company logo',
-    description: 'Develop a complete brand identity with custom logos, fonts, and colors.'
+    description: 'Bumuo ng kumpletong brand identity gamit ang custom logos, fonts, at colors.'
   },
   {
     title: 'Website Graphics',
     image: 'https://picsum.photos/400/300?random=5',
     hint: 'website design',
-    description: 'Produce eye-catching banners, icons, and graphics for your website.'
+    description: 'Gumawa ng eye-catching na banners, icons, at graphics para sa iyong website.'
   },
   {
-    title: 'Personal Projects',
+    title: 'Personal na Proyekto',
     image: 'https://picsum.photos/400/300?random=6',
     hint: 'birthday invitation',
-    description: 'Design invitations, resumes, or any other personal creative project.'
+    description: 'Mag-design ng invitations, resumes, o kahit anong personal na creative project.'
   }
 ];
 
@@ -45,9 +45,9 @@ export default function UseCases() {
     <section id="use-cases" className="py-20 md:py-32">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold">Unleash Your Creativity</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold">Ilabas ang Iyong Pagkamalikhain</h2>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">
-            From professional marketing to personal passion projects, Canva Pro is the only tool you'll need.
+            Mula sa professional marketing hanggang sa personal passion projects, Canva Pro lang ang kailangan mo.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

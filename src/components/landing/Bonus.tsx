@@ -10,22 +10,22 @@ export default function Bonus() {
           <Gift className="inline-block h-5 w-5 mr-2" />
           LIMITED TIME BONUS
         </div>
-        <h2 className="font-headline text-4xl md:text-5xl font-bold mb-4">Get Our Exclusive Asset Pack, FREE!</h2>
+        <h2 className="font-headline text-4xl md:text-5xl font-bold mb-4">Kunin ang Aming Exclusive Asset Pack, LIBRE!</h2>
         <p className="max-w-3xl mx-auto text-lg text-muted-foreground mb-12">
-          As a special thank you, for the next 24 hours, everyone who signs up will also receive our custom-made "Ultimate Creator" asset pack (a P1,500 value) absolutely free.
+          Bilang pasasalamat, sa susunod na 24 oras, lahat ng mag-sign up ay makakatanggap din ng aming custom-made "Ultimate Creator" asset pack (worth P1,500) nang libre.
         </p>
         <div className="flex justify-center">
           <Card className="max-w-md bg-card/60 dark:bg-card/40 backdrop-blur-lg border-accent/50 shadow-xl p-8">
             <CardContent className="p-0">
               <Star className="h-16 w-16 mx-auto text-yellow-400 fill-yellow-400 mb-6" />
               <h3 className="font-headline text-2xl font-bold mb-2">"Ultimate Creator" Pack</h3>
-              <p className="text-muted-foreground">Includes exclusive templates, fonts, and graphics you won't find anywhere else.</p>
+              <p className="text-muted-foreground">May kasamang exclusive templates, fonts, at graphics na di mo makikita sa iba.</p>
             </CardContent>
           </Card>
         </div>
          <div className="text-center mt-12">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-                <a href="#cta">Claim My Bonus & Lifetime Access</a>
+                <a href="#cta">I-claim ang Bonus at Lifetime Access!</a>
             </Button>
         </div>
       </div>

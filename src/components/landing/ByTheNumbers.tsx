@@ -1,8 +1,8 @@
 export default function ByTheNumbers() {
   const stats = [
-    { value: '100M+', label: 'Premium Assets' },
+    { value: '100M+', label: 'Premium na Assets' },
     { value: '1TB', label: 'Cloud Storage' },
-    { value: 'P99', label: 'One-Time Fee' },
+    { value: 'P99', label: 'Isang Bayaran Lang' },
     { value: '∞', label: 'Lifetime Access' },
   ];
 

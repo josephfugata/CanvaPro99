@@ -7,14 +7,14 @@ export default function Journey() {
     <section id="journey" className="py-20 md:py-32">
       <div className="container text-center">
         <Rocket className="h-20 w-20 mx-auto text-primary mb-6" />
-        <h2 className="font-headline text-4xl md:text-5xl font-bold mb-4">Your Creative Journey Starts Now</h2>
+        <h2 className="font-headline text-4xl md:text-5xl font-bold mb-4">Simulan na ang Iyong Creative Journey</h2>
         <p className="max-w-3xl mx-auto text-lg text-muted-foreground mb-8">
-          Stop dreaming about the amazing things you could create. For the price of a coffee, you can have the ultimate creative tool at your fingertips for life. No more limits, no more subscriptions, just pure creative freedom. This is the last design tool you will ever need to pay for.
+          Itigil na ang pangangarap sa mga pwedeng gawin. Sa presyo ng isang kape, magkakaroon ka na ng ultimate creative tool for life. Walang nang limits, walang nang subscriptions, pure creative freedom lang. Ito na ang huling design tool na babayaran mo.
         </p>
         <div className="flex justify-center">
             <Image
                 src="https://picsum.photos/800/400"
-                alt="A visual representation of a creative journey from idea to final design"
+                alt="Isang visual representation ng isang creative journey mula ideya hanggang sa final design"
                 width={800}
                 height={400}
                 data-ai-hint="creative journey"
@@ -22,7 +22,7 @@ export default function Journey() {
             />
         </div>
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-          <a href="#cta">Begin My Journey for P99</a>
+          <a href="#cta">Simulan ang Journey ko for P99</a>
         </Button>
       </div>
     </section>

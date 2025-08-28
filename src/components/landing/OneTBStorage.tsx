@@ -9,7 +9,7 @@ export default function OneTBStorage() {
          <div className="flex-1 flex justify-center items-center mt-8 md:mt-0 md:order-2">
           <Image
             src="https://picsum.photos/600/500?random=10"
-            alt="Cloud storage icon with files"
+            alt="Icon ng cloud storage na may mga file"
             width={600}
             height={500}
             data-ai-hint="cloud storage"
@@ -21,9 +21,9 @@ export default function OneTBStorage() {
             <HardDrive className="h-6 w-6" />
             <span className="font-semibold">1TB CLOUD STORAGE</span>
           </div>
-          <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">All Your Creative Work, In One Place</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Lahat ng Creative Work Mo, Nasa Isang Lugar Lang</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            With a massive 1TB of cloud storage, you can safely store all your designs, photos, videos, and brand assets. No more juggling files across different drives.
+            Sa 1TB na cloud storage, safe mong maiimbak lahat ng iyong designs, photos, videos, at brand assets. Hindi mo na kailangan maglipat-lipat ng files sa iba't ibang drives.
           </p>
           <div className="space-y-4 mb-8">
             <div className="flex items-start gap-4">
@@ -31,8 +31,8 @@ export default function OneTBStorage() {
                 <Cloud className="h-6 w-6" />
               </div>
               <div>
-                <h4 className="font-bold text-xl">Access Anywhere</h4>
-                <p className="text-muted-foreground">Your files are available on any device, anytime, anywhere.</p>
+                <h4 className="font-bold text-xl">Access Kahit Saan</h4>
+                <p className="text-muted-foreground">Ang files mo ay available sa kahit anong device, kahit kailan, kahit saan.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -40,13 +40,13 @@ export default function OneTBStorage() {
                 <Lock className="h-6 w-6" />
               </div>
               <div>
-                <h4 className="font-bold text-xl">Safe and Secure</h4>
-                <p className="text-muted-foreground">Your creative work is protected with world-class security.</p>
+                <h4 className="font-bold text-xl">Ligtas at Secure</h4>
+                <p className="text-muted-foreground">Ang iyong creative work ay protektado ng world-class na security.</p>
               </div>
             </div>
           </div>
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-            <a href="#cta">Get My 1TB Storage for P99</a>
+            <a href="#cta">Kunin ang 1TB Storage ko for P99</a>
           </Button>
         </div>
       </div>

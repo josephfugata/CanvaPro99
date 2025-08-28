@@ -7,9 +7,9 @@ export default function Support() {
       <div className="container">
         <div className="text-center mb-16">
             <LifeBuoy className="h-16 w-16 mx-auto text-primary mb-6" />
-          <h2 className="font-headline text-4xl md:text-5xl font-bold">We've Got Your Back</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold">Andito Kami Para sa'yo</h2>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">
-            Worried you'll be left in the dark? Our dedicated support team is here to help you every step of the way.
+            Nag-aalala ka bang maiiwan sa ere? Ang aming dedicated support team ay handang tumulong sa iyo sa bawat hakbang.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -19,7 +19,7 @@ export default function Support() {
                 <div>
                     <CardTitle className="font-headline text-2xl">Email Support</CardTitle>
                     <CardDescription className="text-base text-muted-foreground">
-                    Get a guaranteed response to any query within 24 hours.
+                    Garantisadong may sagot sa anumang tanong sa loob ng 24 oras.
                     </CardDescription>
                 </div>
             </CardHeader>
@@ -30,7 +30,7 @@ export default function Support() {
               <div>
                 <CardTitle className="font-headline text-2xl">Community Chat</CardTitle>
                 <CardDescription className="text-base text-muted-foreground">
-                 Access our private community group for peer-to-peer help.
+                 Sumali sa aming private community group para sa tulong mula sa kapwa miyembro.
                 </CardDescription>
               </div>
             </CardHeader>

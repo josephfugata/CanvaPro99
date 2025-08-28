@@ -7,24 +7,24 @@ import {
 
 const faqs = [
   {
-    question: 'Is this a one-time payment?',
-    answer: 'Yes, absolutely! You pay only P99 once and get lifetime access to Canva Pro features. No hidden fees, no monthly subscriptions.',
+    question: 'Isang beses lang ba talaga magbabayad?',
+    answer: 'Oo, sigurado! P99 lang, isang beses na bayad, at lifetime access na sa Canva Pro. Walang hidden fees, walang buwanang bayarin.',
   },
   {
-    question: 'How do I get access after payment?',
-    answer: 'After your payment is confirmed, you will receive an email with an invitation link to join our Canva Pro team. Simply click the link, and your account will be upgraded to Pro instantly.',
+    question: 'Paano ko makukuha ang access pagkatapos magbayad?',
+    answer: 'Pagka-confirm ng bayad mo, makakatanggap ka ng email na may invitation link para sumali sa aming Canva Pro team. Click mo lang yung link, at magiging Pro na agad ang account mo.',
   },
   {
-    question: 'Is this legal and safe?',
-    answer: 'Yes, it is. We provide access through Canva\'s team features. It\'s a legitimate way to share premium access. Your account and designs are safe and private to you.',
+    question: 'Legal at safe ba ito?',
+    answer: 'Yes, 100% legit. Ginagamit namin ang team features ng Canva para mag-provide ng access. Legal na paraan ito para mag-share ng premium access. Ang account at designs mo ay private at safe.',
   },
   {
-    question: 'What if I already have a Canva account?',
-    answer: 'No problem! You can use your existing Canva account. The invitation will upgrade your current account to Pro, and all your existing designs will remain safe.',
+    question: 'Paano kung may Canva account na ako?',
+    answer: 'Walang problema! Pwede mong gamitin ang existing Canva account mo. I-uupgrade ng invitation ang current account mo to Pro, at lahat ng designs mo ay mananatiling safe.',
   },
   {
-    question: 'What does "lifetime" mean?',
-    answer: '"Lifetime" refers to the life of the service we provide. We guarantee access for a minimum of 5 years, but we aim to provide it for as long as our service is operational.',
+    question: 'Ano ang ibig sabihin ng "lifetime"?',
+    answer: 'Ang "Lifetime" ay tumutukoy sa haba ng buhay ng aming serbisyo. Ginagarantiya namin ang access for at least 5 years, pero target namin na i-provide ito habang kami ay operational.',
   },
 ];
 
@@ -33,9 +33,9 @@ export default function Faq() {
     <section id="faq" className="py-20 md:py-32">
       <div className="container max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold">Frequently Asked Questions</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold">Mga Madalas na Tanong</h2>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">
-            Have questions? We've got answers.
+            May tanong ka? May sagot kami.
           </p>
         </div>
         <Accordion type="single" collapsible className="w-full bg-card/60 dark:bg-card/40 backdrop-blur-xl rounded-lg p-4 md:p-8 border border-border/50">

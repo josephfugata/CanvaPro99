@@ -9,11 +9,11 @@ export default function TeamBenefits() {
         <div className="flex-1">
           <div className="flex items-center gap-2 text-primary mb-2">
             <Users className="h-6 w-6" />
-            <span className="font-semibold">FOR TEAMS & INDIVIDUALS</span>
+            <span className="font-semibold">PARA SA TEAMS at INDIVIDUALS</span>
           </div>
-          <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Collaborate Like a Pro</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Mag-collaborate na Parang Pro</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            While this is your personal lifetime Pro account, the access is provided via a team plan. This means you get all the powerful real-time collaboration features to work with others if you choose.
+            Kahit na ito'y iyong personal lifetime Pro account, ang access ay ibinibigay sa pamamagitan ng isang team plan. Ibig sabihin, makukuha mo ang lahat ng malakas na real-time collaboration features para makipagtrabaho sa iba kung gugustuhin mo.
           </p>
           <div className="space-y-4 mb-8">
             <div className="flex items-start gap-4">
@@ -21,8 +21,8 @@ export default function TeamBenefits() {
                 <MessageSquare className="h-6 w-6" />
               </div>
               <div>
-                <h4 className="font-bold text-xl">Real-Time Comments</h4>
-                <p className="text-muted-foreground">Leave feedback and work together on any design simultaneously.</p>
+                <h4 className="font-bold text-xl">Real-Time na Komento</h4>
+                <p className="text-muted-foreground">Mag-iwan ng feedback at magtrabaho nang sabay-sabay sa anumang design.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -31,18 +31,18 @@ export default function TeamBenefits() {
               </div>
               <div>
                 <h4 className="font-bold text-xl">Approval Workflows</h4>
-                <p className="text-muted-foreground">Easily manage feedback and get designs approved faster.</p>
+                <p className="text-muted-foreground">Madaling i-manage ang feedback at mas mabilis na maaprubahan ang mga design.</p>
               </div>
             </div>
           </div>
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-            <a href="#cta">Start Collaborating for P99</a>
+            <a href="#cta">Simulan ang Collaboration for P99</a>
           </Button>
         </div>
         <div className="flex-1 flex justify-center items-center mt-8 md:mt-0">
           <Image
             src="https://picsum.photos/600/500?random=12"
-            alt="A team collaborating on a design project"
+            alt="Isang team na nagco-collaborate sa isang design project"
             width={600}
             height={500}
             data-ai-hint="team collaboration"

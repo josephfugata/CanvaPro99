@@ -2,21 +2,21 @@ import { CheckCircle } from 'lucide-react';
 
 export default function Process() {
   const steps = [
-    { title: 'Click "Get Access Now"', description: 'You will be taken to our secure payment gateway.' },
-    { title: 'Enter Your Details', description: 'Fill in your payment information. We accept cards and local payment methods.' },
-    { title: 'Check Your Email', description: 'Instantly, you will receive an email with the subject "Your Canva Pro Invitation".' },
-    { title: 'Click the Invite Link', description: 'This is a unique link that upgrades your account.' },
-    { title: 'Log In & Accept', description: 'Log in to your existing Canva account (or create a new one) and accept the team invitation.' },
-    { title: 'Welcome to Canva Pro!', description: 'That\'s it! Your account is now upgraded with full Pro features for life.' },
+    { title: 'I-click ang "Get Access Now"', description: 'Dadalhin ka sa aming secure na payment gateway.' },
+    { title: 'Ilagay ang Iyong Detalye', description: 'Punan ang iyong impormasyon sa pagbabayad. Tumatanggap kami ng cards at local payment methods.' },
+    { title: 'Tingnan ang Iyong Email', description: 'Agad kang makakatanggap ng email na may subject na "Your Canva Pro Invitation".' },
+    { title: 'I-click ang Invite Link', description: 'Ito ay isang unique link para i-upgrade ang iyong account.' },
+    { title: 'Mag-Log In at Tanggapin', description: 'Mag-log in sa iyong existing na Canva account (o gumawa ng bago) at tanggapin ang team invitation.' },
+    { title: 'Welcome sa Canva Pro!', description: 'Ganun lang! Ang iyong account ay upgraded na at may full Pro features for life.' },
   ];
 
   return (
     <section id="process" className="py-20 md:py-32 bg-secondary/50">
       <div className="container max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold">The Step-by-Step Purchase Process</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold">Ang Step-by-Step na Proseso ng Pagbili</h2>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">
-            We believe in full transparency. Here is exactly what happens after you click the button.
+            Naniniwala kami sa buong transparency. Ito mismo ang mangyayari pagkatapos mong i-click ang button.
           </p>
         </div>
         <div className="relative pl-6">
@@ -34,8 +34,8 @@ export default function Process() {
               <div className="absolute left-0 top-0 h-12 w-12 rounded-full bg-primary border-4 border-background flex items-center justify-center -translate-x-1/2">
                 <CheckCircle className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="font-headline text-2xl font-bold">It's That Simple!</h3>
-              <p className="text-muted-foreground">The whole process takes less than 2 minutes.</p>
+              <h3 className="font-headline text-2xl font-bold">Gano'n lang kasimple!</h3>
+              <p className="text-muted-foreground">Ang buong proseso ay wala pang 2 minuto.</p>
             </div>
         </div>
       </div>
