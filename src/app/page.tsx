@@ -10,8 +10,7 @@ import WhatsIncluded from '@/components/landing/WhatsIncluded';
 import Comparison from '@/components/landing/Comparison';
 import UseCases from '@/components/landing/UseCases';
 import WhoIsItFor from '@/components/landing/WhoIsItFor';
-import MagicStudio from '@/components/landing/MagicStudio';
-import BrandKit from '@/components/landing/BrandKit';
+import MagicStudio from '@/components/landing/MagicStudio'; 
 import ContentPlanner from '@/components/landing/ContentPlanner';
 import OneTBStorage from '@/components/landing/OneTBStorage';
 import ProTemplates from '@/components/landing/ProTemplates';
@@ -50,8 +49,7 @@ export default function Home() {
         <Comparison />
         <UseCases />
         <WhoIsItFor />
-        <MagicStudio />
-        <BrandKit />
+        <MagicStudio /> 
         <ContentPlanner />
         <OneTBStorage />
         <ProTemplates />

@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Crown, Palette, Scissors, FolderSync, Sparkles, Users } from 'lucide-react';
+import { Crown, Scissors, FolderSync, Sparkles, Users } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 interface Benefit {
@@ -23,11 +23,6 @@ const benefits: Benefit[] = [
     icon: Scissors,
     title: 'Background Remover',
     description: 'Instantly remove image and video backgrounds with a single click. Perfect for product shots.',
-  },
-  {
-    icon: Palette,
-    title: 'Brand Kit',
-    description: 'Maintain brand consistency with your own logos, colors, and fonts stored in a Brand Kit.',
   },
   {
     icon: FolderSync,
