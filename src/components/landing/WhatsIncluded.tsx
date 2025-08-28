@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 const includedFeatures = [
   "100+ milyong premium stock photos, videos, audio, at graphics",
   "Magic Studio: Lahat ng pinakamagandang AI tools sa isang lugar",
-  "Brand Kit: Mag-upload ng sarili mong fonts, logos, at gumawa ng color palettes",
   "Background Remover: Agad na tanggalin ang backgrounds ng image at video",
   "Content Planner: Mag-schedule ng social media posts direkta mula sa Canva",
   "1TB na cloud storage para sa iyong designs at assets",
