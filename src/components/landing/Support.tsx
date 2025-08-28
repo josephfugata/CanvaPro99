@@ -19,7 +19,7 @@ export default function Support() {
                 <div>
                     <CardTitle className="font-headline text-2xl">Email Support</CardTitle>
                     <CardDescription className="text-base text-muted-foreground">
-                    Garantisadong may sagot sa anumang tanong sa loob ng 24 oras. Mag-email sa <a href="mailto:mail@supportservicesgroup.co" className="underline">mail@supportservicesgroup.co</a>.
+                    Garantisadong may sagot sa anumang tanong sa loob ng 24 oras. Mag-email sa <a href="mailto:mail@pinoyentrepreneur.me" className="underline">mail@pinoyentrepreneur.me</a>.
                     </CardDescription>
                 </div>
             </CardHeader>
