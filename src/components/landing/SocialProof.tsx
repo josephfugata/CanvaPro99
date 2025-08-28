@@ -5,19 +5,19 @@ import { Star } from 'lucide-react';
 const testimonials = [
   {
     name: 'Sarah L.',
-    avatar: 'https://picsum.photos/id/1011/100/100',
+    avatar: '/Digital Marketer.png',
     title: 'Digital Marketer',
     testimonial: 'The lifetime deal for Canva Pro is insane! It has all the features I need for my clients. An absolute game-changer for my workflow.',
   },
   {
     name: 'John D.',
-    avatar: 'https://picsum.photos/id/1027/100/100',
+    avatar: '/Startup Founder.png',
     title: 'Startup Founder',
     testimonial: 'I was hesitant at first, but this is legit. For P99, I got full access to everything. Best investment for my startup\'s design needs.',
   },
   {
     name: 'Emily R.',
-    avatar: 'https://picsum.photos/id/1040/100/100',
+    avatar: '/Content Creator.png',
     title: 'Content Creator',
     testimonial: 'I can finally use all the premium templates and fonts without worrying about monthly fees. This offer is a dream come true for creators on a budget.',
   },

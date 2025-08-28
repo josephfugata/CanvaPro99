@@ -18,18 +18,9 @@ export default function HowItWorks() {
                 <div className="w-1/3 h-0.5 bg-primary"></div>
             </div>
             
+          
           <Card className="relative bg-card/60 dark:bg-card/40 backdrop-blur-lg border-border/50 shadow-md text-center p-6">
-             <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-background">1</div>
-            <CardHeader className="pt-12">
-              <CreditCard className="h-12 w-12 mx-auto text-primary mb-4" />
-              <CardTitle className="font-headline text-2xl">Secure Payment</CardTitle>
-              <CardDescription className="pt-2 text-base text-muted-foreground">
-                Click the "Get Lifetime Access" button and complete the secure P99 payment.
-              </CardDescription>
-            </CardHeader>
-          </Card>
-          <Card className="relative bg-card/60 dark:bg-card/40 backdrop-blur-lg border-border/50 shadow-md text-center p-6">
-            <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-background">2</div>
+            <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-background">1</div>
             <CardHeader className="pt-12">
               <MailCheck className="h-12 w-12 mx-auto text-primary mb-4" />
               <CardTitle className="font-headline text-2xl">Receive Invite</CardTitle>
@@ -38,6 +29,18 @@ export default function HowItWorks() {
               </CardDescription>
             </CardHeader>
           </Card>
+
+          <Card className="relative bg-card/60 dark:bg-card/40 backdrop-blur-lg border-border/50 shadow-md text-center p-6">
+             <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-background">2</div>
+            <CardHeader className="pt-12">
+              <CreditCard className="h-12 w-12 mx-auto text-primary mb-4" />
+              <CardTitle className="font-headline text-2xl">Secure Payment</CardTitle>
+              <CardDescription className="pt-2 text-base text-muted-foreground">
+                Click the "Get Lifetime Access" button and complete the secure P99 payment.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+          
           <Card className="relative bg-card/60 dark:bg-card/40 backdrop-blur-lg border-border/50 shadow-md text-center p-6">
             <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-background">3</div>
             <CardHeader className="pt-12">
