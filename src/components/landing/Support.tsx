@@ -30,7 +30,7 @@ export default function Support() {
               <div>
                 <CardTitle className="font-headline text-2xl">Messenger Chat</CardTitle>
                 <CardDescription className="text-base text-muted-foreground">
-                  Mag-message sa amin sa <a href="https://m.me/pinoyentrepreneur.me" target="_blank" rel="noopener noreferrer" className="underline">Messenger</a> para sa mas mabilis na kasagutan.
+                  Mag-message sa amin sa <a href="https://m.me/pinoyentrepreneur.me?ref=CanvaPro99" target="_blank" rel="noopener noreferrer" className="underline">Messenger</a> para sa mas mabilis na kasagutan.
                 </CardDescription>
               </div>
             </CardHeader>
