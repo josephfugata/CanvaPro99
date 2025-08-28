@@ -8,7 +8,7 @@ export default function Value() {
         <div className="text-center mb-16">
           <h2 className="font-headline text-4xl md:text-5xl font-bold">Isang Investment na Sulit</h2>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">
-            Isipin mo ang long-term value. Isang P99 na bayad ay magbubukas ng libo-libong pisong halaga, taon-taon.
+            Isipin mo ang long-term value. Isang ₱99 na bayad ay magbubukas ng libo-libong pisong halaga, taon-taon.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -14,7 +14,7 @@ import {z} from 'genkit';
 const GenerateHeadlineInputSchema = z.object({
   businessDescription: z
     .string()
-    .describe('A description of the business offering Canva Pro at P99.'),
+    .describe('A description of the business offering Canva Pro at ₱99.'),
 });
 export type GenerateHeadlineInput = z.infer<typeof GenerateHeadlineInputSchema>;
 

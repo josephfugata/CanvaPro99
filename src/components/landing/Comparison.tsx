@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import React from 'react';
 
 const features = [
-  { feature: 'Presyo', free: 'P0', pro: 'P3,600/taon', lifetime: 'P99 Isahan' },
+  { feature: 'Presyo', free: 'P0', pro: 'P3,600/taon', lifetime: '₱99 Isahan' },
   { feature: '100+ milyong premium assets', free: false, pro: true, lifetime: true },
   { feature: '610,000+ premium templates', free: false, pro: true, lifetime: true },
   { feature: 'Magic Studio AI Tools', free: 'Limited', pro: true, lifetime: true },
@@ -36,7 +36,7 @@ export default function Comparison() {
             <div className="relative">
               <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-bold shadow-lg">PINAKASULIT</div>
               <Card className="text-center bg-primary/10 border-primary shadow-2xl p-4">
-                <CardTitle className="font-headline text-2xl text-primary">Aming P99 Deal</CardTitle>
+                <CardTitle className="font-headline text-2xl text-primary">Aming ₱99 Deal</CardTitle>
               </Card>
             </div>
             
@@ -66,7 +66,7 @@ export default function Comparison() {
             </Card>
             <Card className="text-center bg-primary/10 border-primary/50 p-4">
                 <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg transition-transform transform hover:scale-105 w-full">
-                    <a href="#cta">Mag-upgrade for P99</a>
+                    <a href="#cta">Mag-upgrade for ₱99</a>
                 </Button>
             </Card>
           </div>

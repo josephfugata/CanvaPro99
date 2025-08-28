@@ -24,14 +24,14 @@ export default function FinalCta() {
                 </div>
                 <div className="bg-primary/10 p-6 rounded-lg flex-shrink-0">
                     <p className="text-muted-foreground">Isang Beses na Bayad</p>
-                    <p className="text-6xl font-bold text-primary">P99</p>
+                    <p className="text-6xl font-bold text-primary">₱99</p>
                     <p className="text-muted-foreground line-through">P3,600/taon</p>
                 </div>
             </div>
         </div>
 
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-2xl px-12 py-8 rounded-full shadow-lg transition-transform transform hover:scale-105 animate-pulse">
-          <a href="#">Oo! Bigyan Mo Ako ng Lifetime Canva Pro for P99!</a>
+          <a href="#">Oo! Bigyan Mo Ako ng Lifetime Canva Pro for ₱99!</a>
         </Button>
         <p className="flex items-center justify-center gap-2 mt-4 text-sm text-muted-foreground">
             <AlertTriangle className="h-4 w-4 text-yellow-500" />

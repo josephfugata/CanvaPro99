@@ -33,7 +33,7 @@ import Footer from '@/components/landing/Footer';
 
 
 export default function Home() {
-  const headline = "Lifetime Access sa Canva Pro, P99 Lang!";
+  const headline = "Lifetime Access sa Canva Pro, ₱99 Lang!";
 
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground animated-gradient">

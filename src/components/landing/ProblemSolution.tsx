@@ -28,9 +28,9 @@ export default function ProblemSolution() {
           <Card className="bg-card/60 dark:bg-card/40 border-primary/30 shadow-lg">
             <CardContent className="p-8 text-center">
               <CheckCircle className="h-16 w-16 mx-auto text-primary mb-6" />
-              <h3 className="font-headline text-3xl font-bold mb-4">Ang P99 Lifetime na Solusyon</h3>
+              <h3 className="font-headline text-3xl font-bold mb-4">Ang ₱99 Lifetime na Solusyon</h3>
                <ul className="text-left space-y-3 text-muted-foreground text-lg">
-                <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-primary mt-1 shrink-0" /><span>Isang beses na P99 na bayad, pang-habambuhay.</span></li>
+                <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-primary mt-1 shrink-0" /><span>Isang beses na ₱99 na bayad, pang-habambuhay.</span></li>
                 <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-primary mt-1 shrink-0" /><span>Hindi na ulit magbabayad para sa Canva Pro.</span></li>
                 <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-primary mt-1 shrink-0" /><span>Panatilihin ang lifetime access sa lahat ng features.</span></li>
                 <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-primary mt-1 shrink-0" /><span>Ilabas ang iyong buong potensyal sa pagiging malikhain.</span></li>

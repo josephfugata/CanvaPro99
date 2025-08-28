@@ -34,7 +34,7 @@ export default function HowItWorks() {
               <CreditCard className="h-12 w-12 mx-auto text-primary mb-4" />
               <CardTitle className="font-headline text-2xl">Secure na Pagbabayad</CardTitle>
               <CardDescription className="pt-2 text-base text-muted-foreground">
-                I-click ang "Get Lifetime Access" button at kumpletuhin ang secure na P99 na bayad.
+                I-click ang "Get Lifetime Access" button at kumpletuhin ang secure na ₱99 na bayad.
               </CardDescription>
             </CardHeader>
           </Card>

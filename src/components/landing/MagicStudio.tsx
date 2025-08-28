@@ -45,7 +45,7 @@ export default function MagicStudio() {
             </div>
           </div>
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-            <a href="#cta">Subukan ang Magic for P99</a>
+            <a href="#cta">Subukan ang Magic for ₱99</a>
           </Button>
         </div>
         <div className="flex-1 flex justify-center items-center mt-8 md:mt-0">

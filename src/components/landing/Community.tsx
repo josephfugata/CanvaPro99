@@ -15,7 +15,7 @@ export default function Community() {
             <span>10,000+ Members and counting!</span>
         </div>
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-          <a href="#cta">Sali sa Community for P99!</a>
+          <a href="#cta">Sali sa Community for ₱99!</a>
         </Button>
       </div>
     </section>

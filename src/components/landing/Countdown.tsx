@@ -91,7 +91,7 @@ export default function Countdown() {
                         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 animate-pulse">
                             <a href="#cta">
                                 <Zap className="mr-2 h-5 w-5" />
-                                I-claim ang P99 Lifetime Deal Ngayon!
+                                I-claim ang ₱99 Lifetime Deal Ngayon!
                             </a>
                         </Button>
                     </div>
