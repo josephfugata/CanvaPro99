@@ -1,6 +1,7 @@
 import { Check, Minus, Star } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import React from 'react';
 
 const features = [
   { feature: 'Price', free: 'P0', pro: 'P3,600/year', lifetime: 'P99 Once' },
@@ -42,21 +43,21 @@ export default function Comparison() {
             
             {/* Features */}
             {features.map((item, index) => (
-              <>
-                <div key={`${index}-feature`} className="text-right font-medium text-muted-foreground pr-4">{item.feature}</div>
-                <Card key={`${index}-free`} className="text-center bg-card/60 dark:bg-card/40 border-border/50 py-4">
+              <React.Fragment key={item.feature}>
+                <div className="text-right font-medium text-muted-foreground pr-4">{item.feature}</div>
+                <Card className="text-center bg-card/60 dark:bg-card/40 border-border/50 py-4">
                   {typeof item.free === 'boolean' ? 
                     (item.free ? <Check className="h-6 w-6 text-primary mx-auto" /> : <Minus className="h-6 w-6 text-muted-foreground mx-auto" />) :
                     <span className="font-semibold">{item.free}</span>
                   }
                 </Card>
-                <Card key={`${index}-lifetime`} className="text-center bg-primary/10 border-primary/50 py-4">
+                <Card className="text-center bg-primary/10 border-primary/50 py-4">
                   {typeof item.lifetime === 'boolean' ? 
                     (item.lifetime ? <Check className="h-6 w-6 text-primary mx-auto" /> : <Minus className="h-6 w-6 text-muted-foreground mx-auto" />) :
                     <span className="font-bold text-primary text-lg">{item.lifetime}</span>
                   }
                 </Card>
-              </>
+              </React.Fragment>
             ))}
 
             {/* CTA Buttons */}
