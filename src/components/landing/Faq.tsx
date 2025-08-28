@@ -38,10 +38,10 @@ export default function Faq() {
             Have questions? We've got answers.
           </p>
         </div>
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion type="single" collapsible className="w-full bg-card/60 dark:bg-card/40 backdrop-blur-lg rounded-lg p-4 md:p-8 border border-border/50">
           {faqs.map((faq, i) => (
             <AccordionItem key={i} value={`item-${i}`}>
-              <AccordionTrigger className="text-lg text-left">{faq.question}</AccordionTrigger>
+              <AccordionTrigger className="text-lg text-left hover:no-underline">{faq.question}</AccordionTrigger>
               <AccordionContent className="text-base text-muted-foreground">
                 {faq.answer}
               </AccordionContent>

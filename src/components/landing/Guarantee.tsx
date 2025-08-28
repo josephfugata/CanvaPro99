@@ -3,8 +3,8 @@ import { Button } from '@/components/ui/button';
 
 export default function Guarantee() {
   return (
-    <section id="guarantee" className="py-20 md:py-32 bg-secondary">
-      <div className="container text-center">
+    <section id="guarantee" className="py-20 md:py-32 bg-secondary/50">
+      <div className="container text-center bg-card/60 dark:bg-card/40 backdrop-blur-lg rounded-xl p-8 md:p-16 border border-border/50">
         <ShieldCheck className="h-20 w-20 mx-auto text-primary mb-6" />
         <h2 className="font-headline text-4xl md:text-5xl font-bold mb-4">Your Satisfaction is Guaranteed</h2>
         <p className="max-w-3xl mx-auto text-lg text-muted-foreground mb-8">
