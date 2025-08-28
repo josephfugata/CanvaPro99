@@ -28,9 +28,9 @@ export default function Support() {
             <CardHeader className="flex flex-row items-center gap-4">
               <MessageSquare className="w-12 h-12 text-primary shrink-0" />
               <div>
-                <CardTitle className="font-headline text-2xl">Community Chat</CardTitle>
+                <CardTitle className="font-headline text-2xl">Messenger Chat</CardTitle>
                 <CardDescription className="text-base text-muted-foreground">
-                 Sumali sa aming private community group para sa tulong mula sa kapwa miyembro.
+                 Mag-message sa amin sa Messenger para sa mas mabilis na kasagutan.
                 </CardDescription>
               </div>
             </CardHeader>
