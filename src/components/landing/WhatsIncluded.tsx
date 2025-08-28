@@ -28,7 +28,7 @@ export default function WhatsIncluded() {
             This isn't a "lite" version. You get full, unrestricted access to every powerful feature Canva Pro offers. Here's just a sample of what you'll unlock:
           </p>
         </div>
-        <div className="bg-card/60 dark:bg-card/40 backdrop-blur-lg rounded-xl p-8 md:p-12 border border-border/50 shadow-xl">
+        <div className="bg-card/60 dark:bg-card/40 backdrop-blur-xl rounded-xl p-8 md:p-12 border border-border/50 shadow-xl">
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
             {includedFeatures.map((feature, index) => (
               <li key={index} className="flex items-start gap-3">

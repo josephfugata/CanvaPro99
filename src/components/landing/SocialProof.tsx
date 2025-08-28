@@ -35,7 +35,7 @@ export default function SocialProof() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
-            <Card key={i} className="bg-card/60 dark:bg-card/40 backdrop-blur-lg border-border/50 shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+            <Card key={i} className="bg-card/60 dark:bg-card/40 backdrop-blur-xl border-border/50 shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <Avatar className="h-12 w-12 mr-4">

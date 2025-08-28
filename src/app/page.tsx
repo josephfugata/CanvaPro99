@@ -36,7 +36,7 @@ export default function Home() {
   const headline = "Get Lifetime Access to Canva Pro for Just P99.";
 
   return (
-    <div className="flex min-h-screen flex-col bg-background text-foreground">
+    <div className="flex min-h-screen flex-col bg-background text-foreground animated-gradient">
       <Header />
       <main className="flex-1">
         <Hero headline={headline} />
