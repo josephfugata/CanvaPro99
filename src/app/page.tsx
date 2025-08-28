@@ -1,4 +1,4 @@
-import { generateHeadline } from '@/ai/flows/generate-headline';
+
 import Header from '@/components/landing/Header';
 import Hero from '@/components/landing/Hero';
 import Countdown from '@/components/landing/Countdown';
@@ -33,12 +33,8 @@ import FinalCta from '@/components/landing/FinalCta';
 import Footer from '@/components/landing/Footer';
 
 
-export default async function Home() {
-  const { headlines } = await generateHeadline({
-    businessDescription: 'A lifetime subscription to Canva Pro for only P99.',
-  });
-
-  const headline = headlines[0] || "Get Lifetime Access to Canva Pro for Just P99.";
+export default function Home() {
+  const headline = "Get Lifetime Access to Canva Pro for Just P99.";
 
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
