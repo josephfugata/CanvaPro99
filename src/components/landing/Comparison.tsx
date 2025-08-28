@@ -8,7 +8,6 @@ const features = [
   { feature: '100+ milyong premium assets', free: false, pro: true, lifetime: true },
   { feature: '610,000+ premium templates', free: false, pro: true, lifetime: true },
   { feature: 'Magic Studio AI Tools', free: 'Limited', pro: true, lifetime: true },
-  { feature: 'Brand Kit', free: false, pro: true, lifetime: true },
   { feature: 'Background Remover', free: false, pro: true, lifetime: true },
   { feature: 'Magic Resize', free: false, pro: true, lifetime: true },
   { feature: 'Content Planner', free: false, pro: true, lifetime: true },
