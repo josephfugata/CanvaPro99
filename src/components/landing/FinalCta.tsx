@@ -30,7 +30,7 @@ export default function FinalCta() {
             </div>
         </div>
 
-        <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-2xl px-12 py-8 rounded-full shadow-lg transition-transform transform hover:scale-105 animate-pulse">
+        <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-2xl h-auto px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 animate-pulse whitespace-normal">
           <a href="#">Oo! Bigyan Mo Ako ng Lifetime Canva Pro for ₱99!</a>
         </Button>
         <p className="flex items-center justify-center gap-2 mt-4 text-sm text-muted-foreground">
