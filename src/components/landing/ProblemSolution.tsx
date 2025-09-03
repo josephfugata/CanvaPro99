@@ -39,7 +39,7 @@ export default function ProblemSolution() {
           </Card>
         </div>
         <div className="text-center mt-12">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 whitespace-normal h-auto">
                 <a href="#cta">Handa na akong tumigil sa pag-aaksaya ng pera!</a>
             </Button>
         </div>

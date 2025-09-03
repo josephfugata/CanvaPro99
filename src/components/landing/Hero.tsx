@@ -20,7 +20,7 @@ export default function Hero({ headline }: HeroProps) {
           Ilabas ang iyong pagiging malikhain gamit ang lahat ng features ng Canva Pro. Isang beses lang magbayad, pang-habangbuhay na ang access. Huwag palampasin ang deal na 'to!
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 whitespace-normal h-auto">
                 <a href="#">Kunin ang Lifetime Access sa halagang ₱99</a>
             </Button>
         </div>

@@ -41,7 +41,7 @@ export default function Mobile() {
               </div>
             </div>
           </div>
-          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
+          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 whitespace-normal h-auto">
             <a href="#cta">Mag-design Kahit Saan for ₱99</a>
           </Button>
         </div>
