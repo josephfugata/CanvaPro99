@@ -35,17 +35,19 @@ export default function ProTemplates() {
               </div>
             </div>
           </div>
-          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 whitespace-normal h-auto">
-            <a href="#cta">I-unlock Lahat ng Templates for ₱99</a>
-          </Button>
+          <div className="text-center md:text-left">
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 whitespace-normal h-auto">
+                <a href="#cta">I-unlock Lahat ng Templates for ₱99</a>
+            </Button>
+          </div>
         </div>
         <div className="flex-1 flex justify-center items-center mt-8 md:mt-0">
           <Image
-            src="https://picsum.photos/600/500?random=11"
+            src="/canva-templates.webp"
             alt="Isang collage ng mga premium Canva templates"
             width={600}
             height={500}
-            data-ai-hint="design templates"
+            data-ai-hint="canva templates"
             className="rounded-xl shadow-2xl"
           />
         </div>
