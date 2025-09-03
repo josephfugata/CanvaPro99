@@ -175,7 +175,7 @@ export default function CheckoutPage() {
                              <Card className="bg-card/60 dark:bg-card/40 backdrop-blur-lg">
                                 <CardHeader>
                                     <CardTitle className="font-headline text-3xl">Confirm Your Payment</CardTitle>
-                                    <CardDescription>Fill out this form after you have completed the payment.</CardDescription>
+                                    <CardDescription>Fill out this form after you have completed the payment. Once your payment is verified, your access will be granted within a few minutes to an hour, depending on how busy our team is.</CardDescription>
                                 </CardHeader>
                                 <CardContent>
                                     <Form {...form}>
@@ -250,7 +250,13 @@ export default function CheckoutPage() {
                                                             <FormLabel>Payment Screenshot</FormLabel>
 
                                                             <FormControl>
-                                                                <Input type="file" accept="image/png, image/jpeg, image/jpg"  onChange={e => onChange(e.target.files)} {...fieldProps} />
+                                                                <Input 
+                                                                    type="file" 
+                                                                    accept="image/png, image/jpeg, image/jpg"  
+                                                                    onChange={e => onChange(e.target.files)} 
+                                                                    className="file:bg-primary file:text-primary-foreground file:hover:bg-primary/90 file:font-medium file:py-2 file:px-4 file:rounded-md file:mr-4 cursor-pointer"
+                                                                    {...fieldProps} 
+                                                                />
                                                             </FormControl>
                                                             <FormMessage />
                                                         </FormItem>
@@ -274,5 +280,3 @@ export default function CheckoutPage() {
         </div>
     );
 }
-
-    
