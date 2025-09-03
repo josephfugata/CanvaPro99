@@ -20,7 +20,7 @@ export default function Platform() {
         </div>
         <div className="flex-1 flex justify-center items-center mt-8 md:mt-0">
           <Image
-            src="https://picsum.photos/600/500?random=14"
+            src="/anywhere.jpg"
             alt="Canva na ginagamit sa laptop, tablet, at phone"
             width={600}
             height={500}
