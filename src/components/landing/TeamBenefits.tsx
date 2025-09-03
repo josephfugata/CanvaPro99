@@ -41,7 +41,7 @@ export default function TeamBenefits() {
         </div>
         <div className="flex-1 flex justify-center items-center mt-8 md:mt-0">
           <Image
-            src="https://picsum.photos/600/500?random=12"
+            src="https://plus.unsplash.com/premium_vector-1717082060641-5d649cb834aa?q=80&w=982&auto=format&fit=crop&ixlib=rb-4.1.0"
             alt="Isang team na nagco-collaborate sa isang design project"
             width={600}
             height={500}
