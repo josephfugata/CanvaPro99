@@ -25,7 +25,7 @@ export default function OneTBStorage() {
           <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Sa 1TB na cloud storage, safe mong maiimbak lahat ng iyong designs, photos, videos, at brand assets. Hindi mo na kailangan maglipat-lipat ng files sa iba't ibang drives.
           </p>
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-8 text-left">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 bg-primary/10 text-primary rounded-full h-10 w-10 flex items-center justify-center">
                 <Cloud className="h-6 w-6" />

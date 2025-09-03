@@ -15,7 +15,7 @@ export default function TeamBenefits() {
           <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Kahit na ito'y iyong personal lifetime Pro account, ang access ay ibinibigay sa pamamagitan ng isang team plan. Ibig sabihin, makukuha mo ang lahat ng malakas na real-time collaboration features para makipagtrabaho sa iba kung gugustuhin mo.
           </p>
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-8 text-left">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 bg-primary/10 text-primary rounded-full h-10 w-10 flex items-center justify-center">
                 <MessageSquare className="h-6 w-6" />

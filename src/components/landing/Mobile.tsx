@@ -17,11 +17,11 @@ export default function Mobile() {
           />
         </div>
         <div className="flex-1 md:order-1 text-center md:text-left">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6 text-center md:text-left">Gumawa Kahit Saan, Kahit Kailan</h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0 text-center md:text-left">
+          <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Gumawa Kahit Saan, Kahit Kailan</h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Ang buong lakas ng Canva Pro ay nasa iyong bulsa. Ang mobile at tablet apps ay nagbibigay sa iyo ng lahat ng features ng desktop experience, na-optimize para sa touch.
           </p>
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-8 text-left">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 bg-primary/10 text-primary rounded-full h-10 w-10 flex items-center justify-center">
                 <Smartphone className="h-6 w-6" />

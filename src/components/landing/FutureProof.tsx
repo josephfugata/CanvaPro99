@@ -25,7 +25,7 @@ export default function FutureProof() {
           <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Hindi ito isang beses lang. Habang nagdadagdag ang Canva ng mga bagong features, tools, at assets sa kanilang Pro plan, makukuha mo rin 'yon. Automatic. Walang dagdag na bayad. Kailanman.
           </p>
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-8 text-left">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 bg-primary/10 text-primary rounded-full h-10 w-10 flex items-center justify-center">
                 <Sparkles className="h-6 w-6" />

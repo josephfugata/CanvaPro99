@@ -15,7 +15,7 @@ export default function ProTemplates() {
           <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Magka-access sa mahigit 610,000+ premium, professionally designed na templates para sa kahit anong project na naiisip mo. Pumili lang ng template, i-customize, at tapos na!
           </p>
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-8 text-left">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 bg-primary/10 text-primary rounded-full h-10 w-10 flex items-center justify-center">
                 <Files className="h-6 w-6" />

@@ -15,7 +15,7 @@ export default function ContentPlanner() {
           <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Wala nang mamimiss na post. Mag-design, mag-plano, at mag-schedule ng social media content mo direkta mula sa Canva papuntang Instagram, Facebook, Pinterest, at iba pa.
           </p>
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-8 text-left">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 bg-primary/10 text-primary rounded-full h-10 w-10 flex items-center justify-center">
                 <Clock className="h-6 w-6" />

@@ -15,7 +15,7 @@ export default function MagicStudio() {
           <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Huwag nang magsimula sa simula. Hayaan ang Magic Studio na gumawa ng designs, magsulat ng copy, lumikha ng mga imahe, at kahit buong video mula sa isang simpleng prompt. Ito ang ultimate creative shortcut.
           </p>
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-8 text-left">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 bg-primary/10 text-primary rounded-full h-10 w-10 flex items-center justify-center">
                 <Wand2 className="h-6 w-6" />
