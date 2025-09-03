@@ -3,6 +3,7 @@
 
 import * as React from "react";
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
@@ -20,7 +21,7 @@ import { Input } from "@/components/ui/input";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Check, Loader2, ArrowRight, Eye, Copy } from "lucide-react";
+import { Loader2, ArrowRight, Eye, Copy } from "lucide-react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
@@ -54,6 +55,7 @@ type CheckoutFormValues = z.infer<typeof checkoutFormSchema>;
 
 export default function CheckoutPage() {
     const { toast } = useToast();
+    const router = useRouter();
     const [isSubmitting, setIsSubmitting] = React.useState(false);
     const [isGcashRevealed, setIsGcashRevealed] = React.useState(false);
     const encodedGcash = "MDk2MjI0NjYxNDI="; // Base64 encoded "09622466142"
@@ -98,13 +100,8 @@ export default function CheckoutPage() {
                 body: formData,
             });
 
-            // Since we can't check response.ok in 'no-cors' mode, we optimistically assume success.
-            toast({
-                title: "Payment Submitted!",
-                description: "Your Canva Pro access will be activated within 24 hours. Please check your email.",
-                variant: "default",
-            });
-            form.reset();
+            // Since we can't check response.ok in 'no-cors' mode, we optimistically assume success and redirect.
+            router.push('/thank-you');
 
         } catch (error) {
             console.error("Submission error:", error);
@@ -262,7 +259,7 @@ export default function CheckoutPage() {
                                             )}
                                             
                                             <Button type="submit" disabled={isSubmitting} className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-                                                {isSubmitting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Check className="mr-2 h-5 w-5" />}
+                                                {isSubmitting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <ArrowRight className="mr-2 h-5 w-5" />}
                                                 Submit My Payment
                                             </Button>
                                         </form>
@@ -276,5 +273,4 @@ export default function CheckoutPage() {
             <Footer />
         </div>
     );
-
-    
+}
