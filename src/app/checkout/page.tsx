@@ -20,7 +20,7 @@ import { Input } from "@/components/ui/input";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Check, Loader2, ArrowRight } from "lucide-react";
+import { Check, Loader2, ArrowRight, Eye } from "lucide-react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
@@ -55,6 +55,10 @@ type CheckoutFormValues = z.infer<typeof checkoutFormSchema>;
 export default function CheckoutPage() {
     const { toast } = useToast();
     const [isSubmitting, setIsSubmitting] = React.useState(false);
+    const [isGcashRevealed, setIsGcashRevealed] = React.useState(false);
+    const encodedGcash = "MDkxMiAzNDUgNjc4OQ=="; // Base64 encoded "0912 345 6789"
+    const decodedGcash = React.useMemo(() => Buffer.from(encodedGcash, 'base64').toString('utf8'), [encodedGcash]);
+
 
     const form = useForm<CheckoutFormValues>({
         resolver: zodResolver(checkoutFormSchema),
@@ -136,7 +140,18 @@ export default function CheckoutPage() {
                                     <div>
                                         <h3 className="font-bold mb-2">Option 2: Manual Payment</h3>
                                         <p>Send to GCash Number:</p>
-                                        <p className="font-mono text-lg bg-muted p-2 rounded-md inline-block">0912 345 6789</p>
+                                        <div className="font-mono text-lg bg-muted p-2 rounded-md inline-flex items-center gap-4">
+                                            {isGcashRevealed ? (
+                                                <span>{decodedGcash}</span>
+                                            ) : (
+                                                <>
+                                                    <span>0912 XXX 6789</span>
+                                                    <Button variant="ghost" size="sm" onClick={() => setIsGcashRevealed(true)}>
+                                                        <Eye className="mr-2 h-4 w-4" /> Reveal
+                                                    </Button>
+                                                </>
+                                            )}
+                                        </div>
                                         <p className="text-xs text-muted-foreground mt-1">Name: Juan D. Cruz</p>
                                     </div>
                                     <div className="text-sm text-muted-foreground pt-4 border-t border-border/50">
