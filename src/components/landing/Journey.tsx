@@ -13,10 +13,10 @@ export default function Journey() {
         </p>
         <div className="flex justify-center">
             <Image
-                src="https://picsum.photos/800/400"
+                src="https://plus.unsplash.com/premium_vector-1724387809210-69ddba149ab3?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0"
                 alt="Isang visual representation ng isang creative journey mula ideya hanggang sa final design"
-                width={800}
-                height={400}
+                width={580}
+                height={500}
                 data-ai-hint="creative journey"
                 className="rounded-xl shadow-2xl mb-8"
             />
