@@ -16,13 +16,13 @@ export default function OneTBStorage() {
             className="rounded-xl shadow-2xl"
           />
         </div>
-        <div className="flex-1 md:order-1">
-          <div className="flex items-center gap-2 text-primary mb-2">
+        <div className="flex-1 md:order-1 text-center md:text-left">
+          <div className="flex items-center gap-2 text-primary mb-2 justify-center md:justify-start">
             <HardDrive className="h-6 w-6" />
             <span className="font-semibold">1TB CLOUD STORAGE</span>
           </div>
           <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Lahat ng Creative Work Mo, Nasa Isang Lugar Lang</h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Sa 1TB na cloud storage, safe mong maiimbak lahat ng iyong designs, photos, videos, at brand assets. Hindi mo na kailangan maglipat-lipat ng files sa iba't ibang drives.
           </p>
           <div className="space-y-4 mb-8">

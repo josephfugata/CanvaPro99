@@ -6,13 +6,13 @@ export default function ContentPlanner() {
   return (
     <section id="content-planner" className="py-20 md:py-32">
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="flex-1">
-          <div className="flex items-center gap-2 text-primary mb-2">
+        <div className="flex-1 text-center md:text-left">
+          <div className="flex items-center gap-2 text-primary mb-2 justify-center md:justify-start">
             <CalendarDays className="h-6 w-6" />
             <span className="font-semibold">CONTENT PLANNER</span>
           </div>
           <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">I-plano at I-schedule ang Content Mo</h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Wala nang mamimiss na post. Mag-design, mag-plano, at mag-schedule ng social media content mo direkta mula sa Canva papuntang Instagram, Facebook, Pinterest, at iba pa.
           </p>
           <div className="space-y-4 mb-8">

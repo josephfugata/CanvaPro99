@@ -6,13 +6,13 @@ export default function TeamBenefits() {
   return (
     <section id="team-benefits" className="py-20 md:py-32">
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="flex-1">
-          <div className="flex items-center gap-2 text-primary mb-2">
+        <div className="flex-1 text-center md:text-left">
+          <div className="flex items-center gap-2 text-primary mb-2 justify-center md:justify-start">
             <Users className="h-6 w-6" />
             <span className="font-semibold">PARA SA TEAMS at INDIVIDUALS</span>
           </div>
           <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Mag-collaborate na Parang Pro</h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Kahit na ito'y iyong personal lifetime Pro account, ang access ay ibinibigay sa pamamagitan ng isang team plan. Ibig sabihin, makukuha mo ang lahat ng malakas na real-time collaboration features para makipagtrabaho sa iba kung gugustuhin mo.
           </p>
           <div className="space-y-4 mb-8">

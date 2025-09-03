@@ -16,13 +16,13 @@ export default function FutureProof() {
             className="rounded-xl shadow-2xl"
           />
         </div>
-        <div className="flex-1 md:order-1">
-          <div className="flex items-center gap-2 text-primary mb-2">
+        <div className="flex-1 md:order-1 text-center md:text-left">
+          <div className="flex items-center gap-2 text-primary mb-2 justify-center md:justify-start">
             <TrendingUp className="h-6 w-6" />
             <span className="font-semibold">Laging Nag-E-Evolve</span>
           </div>
           <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Future-Proof ang Iyong Pagkamalikhain</h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Hindi ito isang beses lang. Habang nagdadagdag ang Canva ng mga bagong features, tools, at assets sa kanilang Pro plan, makukuha mo rin 'yon. Automatic. Walang dagdag na bayad. Kailanman.
           </p>
           <div className="space-y-4 mb-8">

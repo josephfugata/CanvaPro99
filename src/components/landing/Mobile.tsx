@@ -16,9 +16,9 @@ export default function Mobile() {
             className="rounded-xl shadow-2xl"
           />
         </div>
-        <div className="flex-1 md:order-1">
+        <div className="flex-1 md:order-1 text-center md:text-left">
           <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Gumawa Kahit Saan, Kahit Kailan</h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Ang buong lakas ng Canva Pro ay nasa iyong bulsa. Ang mobile at tablet apps ay nagbibigay sa iyo ng lahat ng features ng desktop experience, na-optimize para sa touch.
           </p>
           <div className="space-y-4 mb-8">

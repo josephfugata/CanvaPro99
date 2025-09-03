@@ -6,13 +6,13 @@ export default function MagicStudio() {
   return (
     <section id="magic-studio" className="py-20 md:py-32">
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="flex-1">
-          <div className="flex items-center gap-2 text-primary mb-2">
+        <div className="flex-1 text-center md:text-left">
+          <div className="flex items-center gap-2 text-primary mb-2 justify-center md:justify-start">
             <Sparkles className="h-6 w-6" />
             <span className="font-semibold">MAGIC STUDIO</span>
           </div>
           <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">Ang Iyong AI-Powered Design Assistant</h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Huwag nang magsimula sa simula. Hayaan ang Magic Studio na gumawa ng designs, magsulat ng copy, lumikha ng mga imahe, at kahit buong video mula sa isang simpleng prompt. Ito ang ultimate creative shortcut.
           </p>
           <div className="space-y-4 mb-8">
