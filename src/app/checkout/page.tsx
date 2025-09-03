@@ -78,15 +78,15 @@ export default function CheckoutPage() {
         }
 
         try {
-            const response = await fetch("https://automate.pinoyentrepreneur.me/webhook/e77b8cee-5d45-4e17-8d68-5b2fc84537ce", {
+            // Using 'no-cors' mode to allow the request to be sent to the external webhook
+            // We won't be able to read the response, but the data will be sent.
+            await fetch("https://automate.pinoyentrepreneur.me/webhook/e77b8cee-5d45-4e17-8d68-5b2fc84537ce", {
                 method: "POST",
+                mode: 'no-cors', 
                 body: formData,
             });
 
-            if (!response.ok) {
-                throw new Error("Something went wrong. Please try again.");
-            }
-            
+            // Since we can't check response.ok in 'no-cors' mode, we optimistically assume success.
             toast({
                 title: "Payment Submitted!",
                 description: "Your Canva Pro access will be activated within 24 hours. Please check your email.",
@@ -151,7 +151,7 @@ export default function CheckoutPage() {
                                 <CardHeader>
                                     <CardTitle className="font-headline text-3xl">Confirm Your Payment</CardTitle>
                                     <CardDescription>Fill out this form after you have completed the payment.</CardDescription>
-                               _</CardHeader>
+                                </CardHeader>
                                 <CardContent>
                                     <Form {...form}>
                                         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
