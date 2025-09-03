@@ -61,6 +61,8 @@ export default function CheckoutPage() {
         defaultValues: {
             canvaEmail: "",
             paymentProofType: "reference",
+            referenceNumber: "",
+            paymentScreenshot: "",
         },
     });
 
@@ -149,7 +151,7 @@ export default function CheckoutPage() {
                                 <CardHeader>
                                     <CardTitle className="font-headline text-3xl">Confirm Your Payment</CardTitle>
                                     <CardDescription>Fill out this form after you have completed the payment.</CardDescription>
-                                </CardHeader>
+                               _</CardHeader>
                                 <CardContent>
                                     <Form {...form}>
                                         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
