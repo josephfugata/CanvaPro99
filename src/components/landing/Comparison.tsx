@@ -27,7 +27,7 @@ export default function Comparison() {
           </p>
         </div>
         <div className="overflow-x-auto">
-          <div className="grid grid-cols-3 min-w-[700px] md:min-w-0 md:w-full gap-4 items-end">
+          <div className="grid grid-cols-[1fr_auto_auto] min-w-[700px] md:min-w-0 md:grid-cols-3 gap-4 items-end">
             {/* Header */}
             <div></div>
             <Card className="text-center bg-card/40 dark:bg-card/30 border-border/50 p-4">

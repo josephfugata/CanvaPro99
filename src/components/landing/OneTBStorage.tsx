@@ -8,7 +8,7 @@ export default function OneTBStorage() {
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
          <div className="flex-1 flex justify-center items-center mt-8 md:mt-0 md:order-2">
           <Image
-            src="https://picsum.photos/600/500?random=10"
+            src="/creative-all-in-one-place.webp"
             alt="Icon ng cloud storage na may mga file"
             width={600}
             height={500}

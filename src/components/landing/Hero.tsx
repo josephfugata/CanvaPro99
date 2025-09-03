@@ -27,7 +27,7 @@ export default function Hero({ headline }: HeroProps) {
       </div>
       <div className="flex-1 flex justify-center items-center mt-8 md:mt-0">
         <Image
-          src="/A creative collage representing Canva Pro's features.jpg"
+          src="start designing.avif"
           alt="A creative collage representing Canva Pro's features"
           width={600}
           height={500}

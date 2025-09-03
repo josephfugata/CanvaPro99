@@ -41,7 +41,7 @@ export default function ContentPlanner() {
         </div>
         <div className="flex-1 flex justify-center items-center mt-8 md:mt-0">
           <Image
-            src="https://picsum.photos/600/500?random=9"
+            src="/content planning.avif"
             alt="Content planner na nagpapakita ng kalendaryo ng social media posts"
             width={600}
             height={500}

@@ -4,37 +4,37 @@ import { Card, CardContent } from '@/components/ui/card';
 const useCases = [
   {
     title: 'Social Media Posts',
-    image: 'https://picsum.photos/400/300?random=1',
+    image: '/Social Media Posts.png',
     hint: 'social media',
     description: 'Gumawa ng magagandang graphics para sa Instagram, Facebook, at iba pa in minutes.'
   },
   {
     title: 'Marketing Materials',
-    image: 'https://picsum.photos/400/300?random=2',
+    image: '/Marketing Materials.png',
     hint: 'business flyers',
     description: 'Mag-design ng professional flyers, brochures, at business cards na agaw-pansin.'
   },
   {
     title: 'Video Presentations',
-    image: 'https://picsum.photos/400/300?random=3',
+    image: '/Video Presentations.avif',
     hint: 'presentation slide',
     description: 'Bumuo ng engaging video slideshows at presentations para sa trabaho o eskwela.'
   },
   {
     title: 'Logos & Branding',
-    image: 'https://picsum.photos/400/300?random=4',
+    image: '/company logo.avif',
     hint: 'company logo',
     description: 'Bumuo ng kumpletong brand identity gamit ang custom logos, fonts, at colors.'
   },
   {
     title: 'Website Graphics',
-    image: 'https://picsum.photos/400/300?random=5',
+    image: '/Website Graphics.avif',
     hint: 'website design',
     description: 'Gumawa ng eye-catching na banners, icons, at graphics para sa iyong website.'
   },
   {
     title: 'Personal na Proyekto',
-    image: 'https://picsum.photos/400/300?random=6',
+    image: '/Personal Projects.avif',
     hint: 'birthday invitation',
     description: 'Mag-design ng invitations, resumes, o kahit anong personal na creative project.'
   }
