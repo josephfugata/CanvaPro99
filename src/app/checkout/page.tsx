@@ -136,7 +136,7 @@ export default function CheckoutPage() {
                                         <h3 className="font-bold mb-2">Option 1: Scan to Pay</h3>
                                         <div className="bg-white p-4 rounded-md inline-block">
                                              <Image
-                                                src="/gcash-qr.png"
+                                                src="https://automate.pinoyentrepreneur.me/webhook/e77b8cee-5d45-4e17-8d68-5b2fc84537ce"
                                                 alt="GCash QR Code"
                                                 width={250}
                                                 height={250}
@@ -251,6 +251,7 @@ export default function CheckoutPage() {
                                                     render={({ field: { value, onChange, ...fieldProps } }) => (
                                                         <FormItem>
                                                             <FormLabel>Payment Screenshot</FormLabel>
+
                                                             <FormControl>
                                                                 <Input type="file" accept="image/png, image/jpeg, image/jpg"  onChange={e => onChange(e.target.files)} {...fieldProps} />
                                                             </FormControl>
@@ -276,3 +277,5 @@ export default function CheckoutPage() {
         </div>
     );
 }
+
+    
