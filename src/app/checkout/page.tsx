@@ -56,7 +56,7 @@ export default function CheckoutPage() {
     const { toast } = useToast();
     const [isSubmitting, setIsSubmitting] = React.useState(false);
     const [isGcashRevealed, setIsGcashRevealed] = React.useState(false);
-    const encodedGcash = "MDkxMiAzNDUgNjc4OQ=="; // Base64 encoded "0912 345 6789"
+    const encodedGcash = "MDk2MjI0NjYxNDI="; // Base64 encoded "09622466142"
     const decodedGcash = React.useMemo(() => Buffer.from(encodedGcash, 'base64').toString('utf8'), [encodedGcash]);
 
 
@@ -158,7 +158,7 @@ export default function CheckoutPage() {
                                                 </>
                                             ) : (
                                                 <>
-                                                    <span>0912 XXX 6789</span>
+                                                    <span>0962 XXX 6142</span>
                                                     <Button variant="ghost" size="sm" onClick={() => setIsGcashRevealed(true)}>
                                                         <Eye className="mr-2 h-4 w-4" /> Reveal
                                                     </Button>
@@ -276,6 +276,5 @@ export default function CheckoutPage() {
             <Footer />
         </div>
     );
-}
 
     
