@@ -20,7 +20,7 @@ import { Input } from "@/components/ui/input";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Check, Loader2, ArrowRight, Eye } from "lucide-react";
+import { Check, Loader2, ArrowRight, Eye, Copy } from "lucide-react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 
@@ -69,6 +69,14 @@ export default function CheckoutPage() {
             paymentScreenshot: "",
         },
     });
+
+    const handleCopy = () => {
+        navigator.clipboard.writeText(decodedGcash.replace(/\s/g, ''));
+        toast({
+            title: "Copied to Clipboard!",
+            description: "GCash number copied successfully.",
+        });
+    };
 
     async function onSubmit(data: CheckoutFormValues) {
         setIsSubmitting(true);
@@ -141,8 +149,13 @@ export default function CheckoutPage() {
                                         <h3 className="font-bold mb-2">Option 2: Manual Payment</h3>
                                         <p>Send to GCash Number:</p>
                                         <div className="font-mono text-lg bg-muted p-2 rounded-md inline-flex items-center gap-4">
-                                            {isGcashRevealed ? (
-                                                <span>{decodedGcash}</span>
+                                             {isGcashRevealed ? (
+                                                <>
+                                                    <span>{decodedGcash}</span>
+                                                    <Button variant="ghost" size="sm" onClick={handleCopy}>
+                                                        <Copy className="mr-2 h-4 w-4" /> Copy
+                                                    </Button>
+                                                </>
                                             ) : (
                                                 <>
                                                     <span>0912 XXX 6789</span>
