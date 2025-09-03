@@ -1,20 +1,32 @@
-import { Check, Minus, Star } from 'lucide-react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Check, Minus, X } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import React from 'react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-const features = [
-  { feature: 'Presyo', free: 'P0', pro: 'P3,600/taon', lifetime: '₱99 Isahan' },
-  { feature: '100+ milyong premium assets', free: false, pro: true, lifetime: true },
-  { feature: '610,000+ premium templates', free: false, pro: true, lifetime: true },
-  { feature: 'Magic Studio AI Tools', free: 'Limited', pro: true, lifetime: true },
-  { feature: 'Background Remover', free: false, pro: true, lifetime: true },
-  { feature: 'Magic Resize', free: false, pro: true, lifetime: true },
-  { feature: 'Content Planner', free: false, pro: true, lifetime: true },
-  { feature: '1TB Cloud Storage', free: '5GB', pro: true, lifetime: true },
-  { feature: 'Save as Template', free: false, pro: true, lifetime: true },
-  { feature: 'Version History', free: false, pro: true, lifetime: true },
+const freeFeatures = [
+  { feature: 'Premium Assets', available: 'Limited', icon: Minus },
+  { feature: 'Premium Templates', available: 'Limited', icon: Minus },
+  { feature: 'Magic Studio AI Tools', available: 'Limited', icon: Minus },
+  { feature: 'Background Remover', available: false, icon: X },
+  { feature: 'Magic Resize', available: false, icon: X },
+  { feature: 'Content Planner', available: false, icon: X },
+  { feature: '1TB Cloud Storage', available: '5GB', icon: Minus },
+  { feature: 'Save as Template', available: false, icon: X },
+  { feature: 'Version History', available: false, icon: X },
 ];
+
+const proFeatures = [
+  { feature: '100+ milyong premium assets', available: true, icon: Check },
+  { feature: '610,000+ premium templates', available: true, icon: Check },
+  { feature_long: 'Magic Studio AI Tools', feature: 'AI Tools', available: true, icon: Check },
+  { feature: 'Background Remover', available: true, icon: Check },
+  { feature: 'Magic Resize', available: true, icon: Check },
+  { feature: 'Content Planner', available: true, icon: Check },
+  { feature: '1TB Cloud Storage', available: true, icon: Check },
+  { feature: 'Save as Template', available: true, icon: Check },
+  { feature: 'Version History', available: true, icon: Check },
+];
+
 
 export default function Comparison() {
   return (
@@ -26,51 +38,63 @@ export default function Comparison() {
             Tingnan mo kung gaano ka-sulit ang lifetime deal namin kumpara sa regular na Canva plans. Mas maraming value, sa mas murang halaga.
           </p>
         </div>
-        <div className="overflow-x-auto">
-          <div className="grid grid-cols-[1fr_auto_auto] min-w-[700px] md:min-w-0 md:grid-cols-3 gap-4 items-end">
-            {/* Header */}
-            <div></div>
-            <Card className="text-center bg-card/40 dark:bg-card/30 border-border/50 p-4">
-              <CardTitle className="font-headline text-2xl">Canva Free</CardTitle>
-            </Card>
-            <div className="relative">
-              <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-bold shadow-lg">PINAKASULIT</div>
-              <Card className="text-center bg-primary/10 border-primary shadow-2xl p-4">
-                <CardTitle className="font-headline text-2xl text-primary">Aming ₱99 Deal</CardTitle>
-              </Card>
-            </div>
-            
-            {/* Features */}
-            {features.map((item, index) => (
-              <React.Fragment key={item.feature}>
-                <div className="text-right font-medium text-muted-foreground pr-4">{item.feature}</div>
-                <Card className="text-center bg-card/60 dark:bg-card/40 border-border/50 py-4">
-                  {typeof item.free === 'boolean' ? 
-                    (item.free ? <Check className="h-6 w-6 text-primary mx-auto" /> : <Minus className="h-6 w-6 text-muted-foreground mx-auto" />) :
-                    <span className="font-semibold">{item.free}</span>
-                  }
-                </Card>
-                <Card className="text-center bg-primary/10 border-primary/50 py-4">
-                  {typeof item.lifetime === 'boolean' ? 
-                    (item.lifetime ? <Check className="h-6 w-6 text-primary mx-auto" /> : <Minus className="h-6 w-6 text-muted-foreground mx-auto" />) :
-                    <span className="font-bold text-primary text-lg">{item.lifetime}</span>
-                  }
-                </Card>
-              </React.Fragment>
-            ))}
 
-            {/* CTA Buttons */}
-            <div></div>
-            <Card className="text-center bg-card/60 dark:bg-card/40 border-border/50 p-4">
-               <Button variant="outline" disabled>Current Plan Mo</Button>
+        <Tabs defaultValue="pro" className="max-w-3xl mx-auto">
+          <TabsList className="grid w-full grid-cols-2 h-auto">
+            <TabsTrigger value="free" className="py-3 text-lg">Canva Free</TabsTrigger>
+            <TabsTrigger value="pro" className="py-3 text-lg">Aming ₱99 Deal</TabsTrigger>
+          </TabsList>
+          
+          <TabsContent value="free">
+            <Card className="bg-card/60 dark:bg-card/40 border-border/50">
+              <CardContent className="p-6 md:p-8">
+                <div className="text-center mb-6">
+                    <h3 className="font-headline text-3xl font-bold">Canva Free</h3>
+                    <p className="text-5xl font-bold mt-2">P0</p>
+                    <p className="text-muted-foreground">Walang bayad, pero limitado.</p>
+                </div>
+                <ul className="space-y-4">
+                  {freeFeatures.map((item, index) => (
+                    <li key={index} className="flex items-center gap-4">
+                      <item.icon className={`h-6 w-6 shrink-0 ${item.available === false ? 'text-destructive' : 'text-muted-foreground'}`} />
+                      <span className="flex-1 text-muted-foreground">{item.feature}</span>
+                      <span className="font-semibold">{typeof item.available === 'boolean' ? '' : item.available}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
             </Card>
-            <Card className="text-center bg-primary/10 border-primary/50 p-4">
-                <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg transition-transform transform hover:scale-105 w-full">
-                    <a href="#cta">Mag-upgrade for ₱99</a>
-                </Button>
+          </TabsContent>
+
+          <TabsContent value="pro">
+            <Card className="bg-primary/10 border-primary shadow-2xl">
+               <div className="relative">
+                 <div className="absolute -top-4 right-4 bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-bold shadow-lg">PINAKASULIT</div>
+               </div>
+              <CardContent className="p-6 md:p-8">
+                 <div className="text-center mb-6">
+                    <h3 className="font-headline text-3xl font-bold text-primary">Aming Lifetime Deal</h3>
+                    <p className="text-5xl font-bold text-primary mt-2">₱99</p>
+                    <p className="text-primary/80">Isang beses na bayad. Habambuhay.</p>
+                </div>
+                <ul className="space-y-4">
+                  {proFeatures.map((item, index) => (
+                    <li key={index} className="flex items-center gap-4">
+                      <item.icon className="h-6 w-6 text-primary shrink-0" />
+                      <span className="flex-1 text-foreground">{item.feature_long || item.feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                 <div className="text-center mt-8">
+                    <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg transition-transform transform hover:scale-105 w-full md:w-auto h-auto whitespace-normal">
+                        <a href="#cta">Mag-upgrade for ₱99 Ngayon!</a>
+                    </Button>
+                </div>
+              </CardContent>
             </Card>
-          </div>
-        </div>
+          </TabsContent>
+        </Tabs>
+
       </div>
     </section>
   );
