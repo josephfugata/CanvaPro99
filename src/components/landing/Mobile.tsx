@@ -8,7 +8,7 @@ export default function Mobile() {
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="flex-1 flex justify-center items-center mt-8 md:mt-0 md:order-2">
           <Image
-            src="/canva-templates.png"
+            src="/canva-templates.webp"
             alt="A collage of Canva templates available on mobile"
             width={600}
             height={500}
