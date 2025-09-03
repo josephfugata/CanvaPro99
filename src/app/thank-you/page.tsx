@@ -23,11 +23,11 @@ export default function ThankYouPage() {
                     <div className="bg-primary/10 p-6 rounded-lg">
                         <h3 className="font-bold text-xl mb-2">What happens next?</h3>
                         <p className="text-muted-foreground">
-                            Please check your email. You will receive an invitation link from Canva within the next <strong>5-10 minutes</strong> to activate your lifetime Pro access. Make sure to check your spam or junk folder just in case.
+                            Please check your email. You will receive an invitation link from Canva within <strong>a few minutes to an hour</strong> to activate your lifetime Pro access, depending on how busy our team is. Make sure to check your spam or junk folder just in case.
                         </p>
                     </div>
                     <p className="text-sm text-muted-foreground">
-                        If you don't receive the email within 30 minutes, or if you have any other questions, please contact us at <a href="mailto:mail@pinoyentrepreneur.me" className="underline font-semibold">mail@pinoyentrepreneur.me</a>.
+                        If you don't receive the email within an hour, or if you have any other questions, please contact us at <a href="mailto:mail@pinoyentrepreneur.me" className="underline font-semibold">mail@pinoyentrepreneur.me</a>.
                     </p>
                      <Button asChild className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90">
                         <a href="/">Back to Homepage</a>
