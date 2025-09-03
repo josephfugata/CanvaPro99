@@ -1,5 +1,5 @@
 import { Check, Minus, X } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
@@ -47,12 +47,12 @@ export default function Comparison() {
           
           <TabsContent value="free">
             <Card className="bg-card/60 dark:bg-card/40 border-border/50">
+              <CardHeader className="text-center">
+                  <CardTitle className="font-headline text-3xl font-bold">Canva Free</CardTitle>
+                  <div className="text-5xl font-bold mt-2">₱0</div>
+                  <CardDescription>Walang bayad, pero limitado.</CardDescription>
+              </CardHeader>
               <CardContent className="p-6 md:p-8">
-                <div className="text-center mb-6">
-                    <h3 className="font-headline text-3xl font-bold">Canva Free</h3>
-                    <p className="text-5xl font-bold mt-2">P0</p>
-                    <p className="text-muted-foreground">Walang bayad, pero limitado.</p>
-                </div>
                 <ul className="space-y-4">
                   {freeFeatures.map((item, index) => (
                     <li key={index} className="flex items-center gap-4">
@@ -71,12 +71,12 @@ export default function Comparison() {
                <div className="relative">
                  <div className="absolute -top-4 right-4 bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-bold shadow-lg">PINAKASULIT</div>
                </div>
+              <CardHeader className="text-center">
+                  <CardTitle className="font-headline text-3xl font-bold text-primary">Aming Lifetime Deal</CardTitle>
+                  <div className="text-5xl font-bold text-primary mt-2">₱99</div>
+                  <CardDescription className="text-primary/80">Isang beses na bayad. Habambuhay.</CardDescription>
+              </CardHeader>
               <CardContent className="p-6 md:p-8">
-                 <div className="text-center mb-6">
-                    <h3 className="font-headline text-3xl font-bold text-primary">Aming Lifetime Deal</h3>
-                    <p className="text-5xl font-bold text-primary mt-2">₱99</p>
-                    <p className="text-primary/80">Isang beses na bayad. Habambuhay.</p>
-                </div>
                 <ul className="space-y-4">
                   {proFeatures.map((item, index) => (
                     <li key={index} className="flex items-center gap-4">
@@ -86,7 +86,7 @@ export default function Comparison() {
                   ))}
                 </ul>
                  <div className="text-center mt-8">
-                    <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg transition-transform transform hover:scale-105 w-full md:w-auto h-auto whitespace-normal">
+                    <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg transition-transform transform hover:scale-105 w-full md:w-auto h-auto whitespace-normal text-lg px-8 py-6 rounded-full">
                         <a href="#cta">Mag-upgrade for ₱99 Ngayon!</a>
                     </Button>
                 </div>
