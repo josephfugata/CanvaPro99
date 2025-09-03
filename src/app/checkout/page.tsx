@@ -165,7 +165,7 @@ export default function CheckoutPage() {
                                         <p className="text-xs text-muted-foreground mt-1">Name: Juan D. Cruz</p>
                                     </div>
                                     <div className="text-sm text-muted-foreground pt-4 border-t border-border/50">
-                                       <p>After payment, please fill out the form on the right to confirm your purchase. Your access will be granted within a few minutes to an hour, depending on how busy our team is.</p>
+                                       <p>After payment, please fill out the form on the right to confirm your purchase. Once your payment is verified, your access will be granted within a few minutes to an hour, depending on how busy our team is.</p>
                                     </div>
                                 </CardContent>
                             </Card>
