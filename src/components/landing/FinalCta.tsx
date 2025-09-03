@@ -33,9 +33,9 @@ export default function FinalCta() {
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-2xl h-auto px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 animate-pulse whitespace-normal">
           <a href="#">Oo! Bigyan Mo Ako ng Lifetime Canva Pro for ₱99!</a>
         </Button>
-        <p className="flex items-center justify-center gap-2 mt-4 text-sm text-muted-foreground">
-            <AlertTriangle className="h-4 w-4 text-yellow-500" />
-            Limited time offer lang 'to at tataas din ang presyo.
+        <p className="flex items-start justify-center gap-2 mt-4 text-sm text-muted-foreground">
+            <AlertTriangle className="h-4 w-4 text-yellow-500 shrink-0" />
+            <span>Limited time offer lang 'to at tataas din ang presyo.</span>
         </p>
       </div>
     </section>
