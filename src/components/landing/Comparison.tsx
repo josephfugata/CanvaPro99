@@ -37,7 +37,7 @@ const comparisonFeatures = [
         free: false, 
         pro: true 
     },
-    { 
+    {
         feature: 'Cloud Storage', 
         free: '5GB', 
         pro: true,
@@ -84,8 +84,8 @@ export default function Comparison() {
                 <CardContent className="p-6 md:p-8">
                     <ul className="space-y-4">
                     {comparisonFeatures.map((item, index) => (
-                        <li key={index} className="flex items-center gap-4">
-                            {item.free === false ? <X className="h-6 w-6 shrink-0 text-destructive" /> : <Minus className="h-6 w-6 shrink-0 text-muted-foreground" />}
+                        <li key={index} className="flex items-start gap-3">
+                            {item.free === false ? <X className="h-5 w-5 text-destructive mt-1 shrink-0" /> : <Minus className="h-6 w-6 shrink-0 text-muted-foreground" />}
                             <span className="flex-1 text-muted-foreground">{item.feature}</span>
                             <span className="font-semibold">{typeof item.free !== 'boolean' ? item.free : ''}</span>
                         </li>
@@ -108,8 +108,8 @@ export default function Comparison() {
                 <CardContent className="p-6 md:p-8">
                     <ul className="space-y-4">
                     {comparisonFeatures.map((item, index) => (
-                        <li key={index} className="flex items-center gap-4">
-                        <Check className="h-6 w-6 text-primary shrink-0" />
+                        <li key={index} className="flex items-start gap-3">
+                        <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
                         <span className="flex-1 text-foreground">{item.feature}</span>
                         {item.pro_text && <span className="font-semibold">{item.pro_text}</span>}
                         </li>
@@ -117,7 +117,7 @@ export default function Comparison() {
                     </ul>
                     <div className="text-center mt-8">
                         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 whitespace-normal h-auto w-full">
-                            <a href="#cta">Mag-upgrade for ₱99 Ngayon!</a>
+                            <a href="/checkout">Mag-upgrade for ₱99 Ngayon!</a>
                         </Button>
                     </div>
                 </CardContent>
@@ -163,7 +163,7 @@ export default function Comparison() {
                         <div className="text-4xl font-bold">₱99</div>
                         <div>Isang beses lang</div>
                         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 whitespace-normal h-auto mt-4">
-                            <a href="#cta">Mag-upgrade Ngayon!</a>
+                            <a href="/checkout">Mag-upgrade Ngayon!</a>
                         </Button>
                     </TableCell>
                  </TableRow>

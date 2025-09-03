@@ -39,7 +39,7 @@ export default function WhatsIncluded() {
         </div>
          <div className="text-center mt-12">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-                <a href="#cta">I-unlock Lahat ng Features for ₱99</a>
+                <a href="/checkout">I-unlock Lahat ng Features for ₱99</a>
             </Button>
         </div>
       </div>

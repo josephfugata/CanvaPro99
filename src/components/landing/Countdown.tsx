@@ -89,7 +89,7 @@ export default function Countdown() {
                      <div className="bg-primary/10 p-6 flex flex-col md:flex-row items-center justify-center gap-4 text-center">
                          <h3 className="font-headline text-xl md:text-2xl font-bold">Huwag Magpahuli!</h3>
                         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 animate-pulse whitespace-normal h-auto">
-                            <a href="#cta">
+                            <a href="/checkout">
                                 <Zap className="mr-2 h-5 w-5" />
                                 I-claim ang ₱99 Lifetime Deal Ngayon!
                             </a>

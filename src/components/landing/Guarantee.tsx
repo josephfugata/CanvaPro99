@@ -11,7 +11,7 @@ export default function Guarantee() {
           Sobrang kampante kami sa aming offer kaya nagbibigay kami ng 7-day money-back guarantee. Kung hindi ka kuntento sa iyong lifetime Canva Pro access, ire-refund namin ang bayad mo, no questions asked. Wala kang talo.
         </p>
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-            <a href="#cta">I-claim ang ₱99 Lifetime Deal Mo</a>
+            <a href="/checkout">I-claim ang ₱99 Lifetime Deal Mo</a>
         </Button>
       </div>
     </section>

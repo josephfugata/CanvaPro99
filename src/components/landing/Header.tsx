@@ -16,11 +16,11 @@ export default function Header() {
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-            <a href="#benefits" className="transition-colors hover:text-primary">Mga Benepisyo</a>
-            <a href="#testimonials" className="transition-colors hover:text-primary">Testimonials</a>
-            <a href="#faq" className="transition-colors hover:text-primary">FAQ</a>
+            <a href="/#benefits" className="transition-colors hover:text-primary">Mga Benepisyo</a>
+            <a href="/#testimonials" className="transition-colors hover:text-primary">Testimonials</a>
+            <a href="/#faq" className="transition-colors hover:text-primary">FAQ</a>
             <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 transition-transform transform hover:scale-105 shadow-lg">
-              <a href="#cta">Kunin ang Lifetime Access</a>
+              <a href="/checkout">Kunin ang Lifetime Access</a>
             </Button>
           </nav>
           <Sheet>
@@ -36,11 +36,11 @@ export default function Header() {
                   <Zap className="h-6 w-6 text-primary" />
                   <span className="font-bold font-headline">CanvaPro99</span>
                 </a>
-                <a href="#benefits" className="text-muted-foreground hover:text-primary">Mga Benepisyo</a>
-                <a href="#testimonials" className="text-muted-foreground hover:text-primary">Testimonials</a>
-                <a href="#faq" className="text-muted-foreground hover:text-primary">FAQ</a>
+                <a href="/#benefits" className="text-muted-foreground hover:text-primary">Mga Benepisyo</a>
+                <a href="/#testimonials" className="text-muted-foreground hover:text-primary">Testimonials</a>
+                <a href="/#faq" className="text-muted-foreground hover:text-primary">FAQ</a>
                 <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 w-full mt-4">
-                  <a href="#cta">Kunin ang Lifetime Access</a>
+                  <a href="/checkout">Kunin ang Lifetime Access</a>
                 </Button>
               </nav>
             </SheetContent>

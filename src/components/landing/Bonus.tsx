@@ -25,7 +25,7 @@ export default function Bonus() {
         </div>
          <div className="text-center mt-12">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 whitespace-normal h-auto">
-                <a href="#cta">I-claim ang Bonus at Lifetime Access!</a>
+                <a href="/checkout">I-claim ang Bonus at Lifetime Access!</a>
             </Button>
         </div>
       </div>
