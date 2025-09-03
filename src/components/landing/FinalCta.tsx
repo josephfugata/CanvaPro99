@@ -10,8 +10,8 @@ export default function FinalCta() {
           Nakita mo na ang features, ang value, at ang napakamurang presyo. May dalawa kang pagpipilian: isara ang page na ito at magpatuloy sa pagbabayad ng mahal na subscriptions, o mag-invest ng maliit na halaga para sa lifetime na creative power.
         </p>
 
-        <div className="bg-card/60 dark:bg-card/40 backdrop-blur-lg rounded-xl p-8 border border-border/50 shadow-xl mb-8">
-            <div className="flex flex-col md:flex-row gap-8 items-center">
+        <div className="bg-card/60 dark:bg-card/40 backdrop-blur-lg rounded-xl p-6 md:p-8 border border-border/50 shadow-xl mb-8">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
                 <div className="text-left flex-1">
                     <h3 className="font-headline text-2xl font-bold mb-2 flex items-center gap-2"><Sparkles className="text-primary"/>Ito ang Makukuha Mo:</h3>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
@@ -22,7 +22,7 @@ export default function FinalCta() {
                         <li>7-Day Money-Back Guarantee</li>
                     </ul>
                 </div>
-                <div className="bg-primary/10 p-6 rounded-lg flex-shrink-0">
+                <div className="bg-primary/10 p-6 rounded-lg flex-shrink-0 w-full md:w-auto">
                     <p className="text-muted-foreground">Isang Beses na Bayad</p>
                     <p className="text-6xl font-bold text-primary">₱99</p>
                     <p className="text-muted-foreground line-through">P3,600/taon</p>
