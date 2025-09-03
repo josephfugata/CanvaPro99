@@ -14,7 +14,7 @@ export default function FinalCta() {
             <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
                 <div className="text-left flex-1">
                     <h3 className="font-headline text-2xl font-bold mb-2 flex items-center gap-2"><Sparkles className="text-primary"/>Ito ang Makukuha Mo:</h3>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <ul className="list-disc list-outside pl-5 text-muted-foreground space-y-1">
                         <li>Lifetime Canva Pro Access</li>
                         <li>Lahat ng Kasalukuyan at Future Pro Features</li>
                         <li>100+ Milyong Premium Assets</li>
