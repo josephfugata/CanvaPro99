@@ -8,11 +8,11 @@ export default function FutureProof() {
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
          <div className="flex-1 flex justify-center items-center mt-8 md:mt-0 md:order-2">
           <Image
-            src="https://picsum.photos/600/500?random=13"
+            src="https://plus.unsplash.com/premium_vector-1698192128950-03bde4cddbc4?q=80&w=518&auto=format&fit=crop&ixlib=rb-4.1.0"
             alt="Graph na nagpapakita ng pataas na trend ng mga bagong features"
             width={600}
             height={500}
-            data-ai-hint="future technology"
+            data-ai-hint="rocket launch"
             className="rounded-xl shadow-2xl"
           />
         </div>
