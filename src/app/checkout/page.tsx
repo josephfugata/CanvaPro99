@@ -252,8 +252,7 @@ export default function CheckoutPage() {
                                                                 <Input 
                                                                     type="file" 
                                                                     accept="image/png, image/jpeg, image/jpg"  
-                                                                    onChange={e => onChange(e.target.files)} 
-                                                                    className="file:bg-primary file:text-primary-foreground file:hover:bg-primary/90 file:font-medium file:py-2 file:px-4 file:rounded-md file:border-none file:mr-4"
+                                                                    onChange={e => onChange(e.target.files)}
                                                                     {...fieldProps} 
                                                                 />
                                                             </FormControl>
@@ -279,5 +278,3 @@ export default function CheckoutPage() {
         </div>
     );
 }
-
-    
