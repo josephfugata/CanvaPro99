@@ -174,7 +174,7 @@ export default function CheckoutPage() {
                              <Card className="bg-card/60 dark:bg-card/40 backdrop-blur-lg">
                                 <CardHeader>
                                     <CardTitle className="font-headline text-3xl">Confirm Your Payment</CardTitle>
-                                    <CardDescription>Fill out this form after you have completed the payment. Once your payment is verified, your access will be granted within a few minutes to an hour, depending on how busy our team is.</CardDescription>
+                                    <CardDescription>Fill out this form after you have completed the payment. Once your payment is verified, your access will be granted.</CardDescription>
                                 </CardHeader>
                                 <CardContent>
                                     <Form {...form}>
