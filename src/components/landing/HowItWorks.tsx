@@ -16,25 +16,24 @@ export default function HowItWorks() {
             <div className="absolute top-1/2 left-0 w-full flex justify-around -translate-y-1/2 hidden md:block">                
             </div>
             
-          
           <Card className="relative bg-card/60 dark:bg-card/40 backdrop-blur-lg border-border/50 shadow-md text-center p-6">
-            <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-background">1</div>
-            <CardHeader className="pt-12">
-              <MailCheck className="h-12 w-12 mx-auto text-primary mb-4" />
-              <CardTitle className="font-headline text-2xl">Tanggapin ang Invite</CardTitle>
-              <CardDescription className="pt-2 text-base text-muted-foreground">
-                Makakatanggap ka agad ng email na may special invitation link para sumali sa aming Canva Pro team.
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          <Card className="relative bg-card/60 dark:bg-card/40 backdrop-blur-lg border-border/50 shadow-md text-center p-6">
-             <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-background">2</div>
+             <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-background">1</div>
             <CardHeader className="pt-12">
               <CreditCard className="h-12 w-12 mx-auto text-primary mb-4" />
               <CardTitle className="font-headline text-2xl">Secure na Pagbabayad</CardTitle>
               <CardDescription className="pt-2 text-base text-muted-foreground">
                 I-click ang "Get Lifetime Access" button at kumpletuhin ang secure na ₱99 na bayad.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+          
+          <Card className="relative bg-card/60 dark:bg-card/40 backdrop-blur-lg border-border/50 shadow-md text-center p-6">
+            <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-background">2</div>
+            <CardHeader className="pt-12">
+              <MailCheck className="h-12 w-12 mx-auto text-primary mb-4" />
+              <CardTitle className="font-headline text-2xl">Tanggapin ang Invite</CardTitle>
+              <CardDescription className="pt-2 text-base text-muted-foreground">
+                Makakatanggap ka agad ng email na may special invitation link para sumali sa aming Canva Pro team.
               </CardDescription>
             </CardHeader>
           </Card>
