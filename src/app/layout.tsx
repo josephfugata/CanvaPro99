@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: 'CanvaPro99 Landing - Lifetime Canva Pro sa halagang ₱99 lang!',
-  description: 'Habang-buhay na access sa Canva Pro sa isang-beses na bayad na ₱99 lang. I-unlock ang lahat ng premium features at assets para sa iyong creativity. Mag-avail na!',
+  description: 'Habang-buhay na access sa Canva Pro sa isang-beses na bayad na ₱99 lang. I-unlock ang lahat ng premium features et assets para sa iyong creativity. Mag-avail na!',
   keywords: [
     'Canva Pro',
     'Canva Pro lifetime',
@@ -82,7 +82,7 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}}
         />
-        <noscript><img height="1" width="1" style="display:none"
+        <noscript><img height="1" width="1" style={{ display: 'none' }}
         src="https://www.facebook.com/tr?id=1366619151535555&ev=PageView&noscript=1"
         /></noscript>
         {/* End Meta Pixel Code */}
