@@ -1,3 +1,4 @@
+
 "use client";
 
 import * as React from "react";
@@ -250,6 +251,7 @@ export default function CheckoutPage() {
                                                             <FormControl>
                                                                 <FileInput 
                                                                     {...form.register("paymentScreenshot")}
+                                                                    value={field.value}
                                                                     accept="image/png, image/jpeg, image/jpg"
                                                                 />
                                                             </FormControl>
@@ -275,3 +277,5 @@ export default function CheckoutPage() {
         </div>
     );
 }
+
+    

@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -10,9 +11,10 @@ import { Input } from "@/components/ui/input"
 const FileInput = React.forwardRef<
   HTMLInputElement,
   React.ComponentProps<"input">
->(({ className, ...props }, ref) => {
-  const [fileName, setFileName] = React.useState<string | null>(null)
+>(({ className, value, ...props }, ref) => {
   const internalRef = React.useRef<HTMLInputElement>(null)
+  
+  // Combine refs
   const combinedRef = (node: HTMLInputElement) => {
     if (typeof ref === "function") {
       ref(node)
@@ -28,11 +30,17 @@ const FileInput = React.forwardRef<
     internalRef.current?.click()
   }
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]
-    setFileName(file ? file.name : null)
-    props.onChange?.(e)
-  }
+  // Determine file name from `value` which can be FileList or string
+  const fileName = React.useMemo(() => {
+    if (value instanceof FileList && value.length > 0) {
+      return value[0].name;
+    }
+    if (typeof value === 'string') {
+      return value;
+    }
+    return null;
+  }, [value]);
+
 
   return (
     <div className={cn("relative", className)}>
@@ -43,6 +51,7 @@ const FileInput = React.forwardRef<
         className="pr-[120px] text-muted-foreground"
         placeholder="Upload your screenshot"
         aria-label="Selected file"
+        onClick={handleButtonClick}
       />
       <Button
         type="button"
@@ -57,7 +66,6 @@ const FileInput = React.forwardRef<
         type="file"
         ref={combinedRef}
         className="hidden"
-        onChange={handleFileChange}
         {...props}
       />
     </div>
@@ -66,3 +74,5 @@ const FileInput = React.forwardRef<
 FileInput.displayName = "FileInput"
 
 export { FileInput }
+
+    
