@@ -17,6 +17,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { FileInput } from "@/components/ui/file-input";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -41,7 +42,7 @@ const checkoutFormSchema = z.object({
     path: ["referenceNumber"],
 }).refine(data => {
     if (data.paymentProofType === 'screenshot') {
-        return !!data.paymentScreenshot && data.paymentScreenshot.length > 0;
+        return data.paymentScreenshot instanceof FileList && data.paymentScreenshot.length > 0;
     }
     return true;
 }, {
@@ -67,7 +68,6 @@ export default function CheckoutPage() {
             canvaEmail: "",
             paymentProofType: "reference",
             referenceNumber: "",
-            paymentScreenshot: "",
         },
     });
 
@@ -244,16 +244,13 @@ export default function CheckoutPage() {
                                                 <FormField
                                                     control={form.control}
                                                     name="paymentScreenshot"
-                                                    render={({ field: { value, onChange, ...fieldProps } }) => (
+                                                    render={({ field }) => (
                                                         <FormItem>
                                                             <FormLabel>Payment Screenshot</FormLabel>
-
                                                             <FormControl>
-                                                                <Input 
-                                                                    type="file" 
-                                                                    accept="image/png, image/jpeg, image/jpg"  
-                                                                    onChange={e => onChange(e.target.files)}
-                                                                    {...fieldProps} 
+                                                                <FileInput 
+                                                                    {...form.register("paymentScreenshot")}
+                                                                    accept="image/png, image/jpeg, image/jpg"
                                                                 />
                                                             </FormControl>
                                                             <FormMessage />
