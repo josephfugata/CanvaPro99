@@ -161,7 +161,7 @@ export default function CheckoutPage() {
                                                 </>
                                             )}
                                         </div>
-                                        <p className="text-xs text-muted-foreground mt-1">Name: Juan D. Cruz</p>
+                                        <p className="text-xs text-muted-foreground mt-1">Name: Joseph F.</p>
                                     </div>
                                     <div className="text-sm text-muted-foreground pt-4 border-t border-border/50">
                                        <p>After payment, please fill out the form <span className="hidden md:inline">on the right</span><span className="inline md:hidden">below</span> to confirm your purchase.</p>
