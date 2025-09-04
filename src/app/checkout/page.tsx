@@ -1,7 +1,7 @@
-
 "use client";
 
 import * as React from "react";
+import { useEffect } from 'react'; // Import useEffect
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -25,6 +25,12 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Loader2, ArrowRight, Eye, Copy } from "lucide-react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
+
+declare global {
+  interface Window {
+    fbq: (...args: any[]) => void;
+  }
+}
 
 const checkoutFormSchema = z.object({
   canvaEmail: z.string().email({ message: "Please enter a valid email address." }),
@@ -62,6 +68,12 @@ export default function CheckoutPage() {
     const encodedGcash = "MDk2MjI0NjYxNDI="; // Base64 encoded "09622466142"
     const decodedGcash = React.useMemo(() => Buffer.from(encodedGcash, 'base64').toString('utf8'), [encodedGcash]);
 
+    // Fire AddToCart event when the checkout page loads
+    useEffect(() => {
+        if (typeof window !== 'undefined' && window.fbq) {
+            window.fbq('track', 'AddToCart', { value: 99.00, currency: 'PHP' });
+        }
+    }, []);
 
     const form = useForm<CheckoutFormValues>({
         resolver: zodResolver(checkoutFormSchema),
@@ -239,8 +251,7 @@ export default function CheckoutPage() {
                                                         </FormItem>
                                                     )}
                                                 />
-                                            )}
-
+                                            )}\n
                                             {form.watch("paymentProofType") === "screenshot" && (
                                                 <FormField
                                                     control={form.control}
@@ -277,5 +288,3 @@ export default function CheckoutPage() {
         </div>
     );
 }
-
-    

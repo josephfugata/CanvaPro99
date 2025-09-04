@@ -1,11 +1,26 @@
 
+"use client";
+
 import { CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
+import React, { useEffect } from 'react';
+
+declare global {
+  interface Window {
+    fbq: (...args: any[]) => void;
+  }
+}
 
 export default function ThankYouPage() {
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Purchase', { value: 99.00, currency: 'PHP' });
+    }
+  }, []);
+
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground animated-gradient">
       <Header />
