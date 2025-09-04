@@ -11,13 +11,13 @@ const testimonials = [
   },
   {
     name: 'John D.',
-    avatar: '/Startup Founder.png',
+    avatar: '/Content Creator.png',
     title: 'Startup Founder',
     testimonial: 'Nag-aalangan ako nung una, pero legit pala! Sa P99, full access na sa lahat. Best investment para sa design needs ng startup ko.',
   },
   {
     name: 'Emily R.',
-    avatar: '/Content Creator.png',
+    avatar: '/Startup Founder.png',
     title: 'Content Creator',
     testimonial: 'Sa wakas, magagamit ko na lahat ng premium templates at fonts nang hindi nag-aalala sa monthly fees. Dream come true para sa mga creator na on a budget!',
   },
