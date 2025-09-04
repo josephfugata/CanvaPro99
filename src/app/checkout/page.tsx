@@ -251,7 +251,7 @@ export default function CheckoutPage() {
                                                         </FormItem>
                                                     )}
                                                 />
-                                            )}\n
+                                            )}
                                             {form.watch("paymentProofType") === "screenshot" && (
                                                 <FormField
                                                     control={form.control}
@@ -288,3 +288,5 @@ export default function CheckoutPage() {
         </div>
     );
 }
+
+    
