@@ -1,4 +1,3 @@
-
 "use client";
 
 import { CheckCircle } from 'lucide-react';
@@ -7,18 +6,12 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import React, { useEffect } from 'react';
-
-declare global {
-  interface Window {
-    fbq: (...args: any[]) => void;
-  }
-}
+import { event } from '@/lib/fpixel';
 
 export default function ThankYouPage() {
+  
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'Purchase', { value: 99.00, currency: 'PHP' });
-    }
+    event('Purchase', { value: 99.00, currency: 'PHP' });
   }, []);
 
   return (
@@ -26,7 +19,7 @@ export default function ThankYouPage() {
       <Header />
       <main className="flex-1 flex items-center justify-center py-20 md:py-32">
         <div className="container max-w-2xl text-center">
-            <Card className="bg-card/60 dark:bg-card/40 backdrop-blur-lg p-4 md:p-12">
+            <Card className="bg-card/60 dark:bg-card/40 backdrop-blur-lg p-6 md:p-12">
                 <CardHeader>
                     <CheckCircle className="h-24 w-24 mx-auto text-primary" />
                     <CardTitle className="font-headline text-4xl md:text-5xl mt-6">Payment Submitted!</CardTitle>

@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { useEffect } from 'react'; // Import useEffect
+import { useEffect } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -25,12 +25,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Loader2, ArrowRight, Eye, Copy } from "lucide-react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
+import { event } from '@/lib/fpixel';
 
-declare global {
-  interface Window {
-    fbq: (...args: any[]) => void;
-  }
-}
 
 const checkoutFormSchema = z.object({
   canvaEmail: z.string().email({ message: "Please enter a valid email address." }),
@@ -68,11 +64,10 @@ export default function CheckoutPage() {
     const encodedGcash = "MDk2MjI0NjYxNDI="; // Base64 encoded "09622466142"
     const decodedGcash = React.useMemo(() => Buffer.from(encodedGcash, 'base64').toString('utf8'), [encodedGcash]);
 
-    // Fire AddToCart event when the checkout page loads
+    // Fire Meta Pixel events when the checkout page loads
     useEffect(() => {
-        if (typeof window !== 'undefined' && window.fbq) {
-            window.fbq('track', 'AddToCart', { value: 99.00, currency: 'PHP' });
-        }
+        event('AddToCart', { value: 99.00, currency: 'PHP' });
+        event('InitiateCheckout');
     }, []);
 
     const form = useForm<CheckoutFormValues>({
@@ -177,7 +172,7 @@ export default function CheckoutPage() {
                                         <p className="text-xs text-muted-foreground mt-1">Name: Joseph F.</p>
                                     </div>
                                     <div className="text-sm text-muted-foreground pt-4 border-t border-border/50">
-                                       <p>After payment, please fill out the form <span className="hidden md:inline">on the right</span><span className="inline md:hidden">below</span> to confirm your purchase. Once your payment is verified, your access will be granted.</p>
+                                       <p>After payment, please fill out the form <span className="hidden md:inline">on the right</span><span className="inline md:hidden">below</span> to confirm your purchase.</p>
                                     </div>
                                 </CardContent>
                             </Card>
@@ -288,5 +283,3 @@ export default function CheckoutPage() {
         </div>
     );
 }
-
-    

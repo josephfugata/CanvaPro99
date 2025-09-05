@@ -1,11 +1,13 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import { Suspense } from 'react';
+import { MetaPixel } from '@/components/analytics/MetaPixel';
 
 
 export const metadata: Metadata = {
-  title: 'CanvaPro99 Landing - Lifetime Canva Pro sa halagang ₱99 lang!',
-  description: 'Habang-buhay na access sa Canva Pro sa isang-beses na bayad na ₱99 lang. I-unlock ang lahat ng premium features et assets para sa iyong creativity. Mag-avail na!',
+  title: 'CanvaPro99 - Lifetime Canva Pro sa halagang ₱99 lang!',
+  description: 'Habang-buhay na access sa Canva Pro sa isang-beses na bayad na ₱99 lang. I-unlock ang lahat ng premium features at assets para sa iyong creativity. Mag-avail na!',
   keywords: [
     'Canva Pro',
     'Canva Pro lifetime',
@@ -19,28 +21,31 @@ export const metadata: Metadata = {
     'social media graphics',
     'video editing',
     'unlimited design',
+    'Canva 99 pesos',
+    'Canva sale',
+    'graphic design tools Philippines',
   ],
   openGraph: {
     title: 'Lifetime Canva Pro sa halagang ₱99 lang! | CanvaPro99',
-    description: 'I-unlock ang lahat ng premium features et assets ng Canva Pro sa isang-beses na bayad. Walang monthly fees!',
+    description: 'I-unlock ang lahat ng premium features at assets ng Canva Pro sa isang-beses na bayad. Walang monthly fees!',
     url: 'https://canvapro99.com', // Replace with your actual domain
     siteName: 'CanvaPro99',
     images: [
       {
-        url: 'https://canvapro99.com/start-designing.avif', // Replace with your actual domain
+        url: '/start-designing.avif', // Assuming it's in the public folder
         width: 1200,
         height: 630,
         alt: 'Creative collage representing Canva Pro features',
       },
     ],
-    locale: 'en_US',
+    locale: 'en_PH',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Lifetime Canva Pro sa halagang ₱99 lang! | CanvaPro99',
-    description: 'Habang-buhay na access sa Canva Pro sa isang-beses na bayad na ₱99 lang. I-unlock ang lahat ng premium features et assets para sa iyong creativity.',
-    images: ['https://canvapro99.com/start-designing.avif'], // Replace with your actual domain
+    description: 'Habang-buhay na access sa Canva Pro sa isang-beses na bayad na ₱99 lang. I-unlock ang lahat ng premium features at assets para sa iyong creativity.',
+    images: ['/start-designing.avif'], // Assuming it's in the public folder
   },
   robots: {
     index: true,
@@ -67,27 +72,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
         <link rel="icon" href="/favicon.png" sizes="any" />
-        {/* Meta Pixel Code */}
-        <script
-          dangerouslySetInnerHTML={{ __html: `
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1366619151535555');
-            fbq('track', 'PageView');
-          `}}
-        />
-        <noscript><img height="1" width="1" style={{ display: 'none' }}
-        src="https://www.facebook.com/tr?id=1366619151535555&ev=PageView&noscript=1"
-        /></noscript>
-        {/* End Meta Pixel Code */}
       </head>
       <body className="font-body antialiased">
+        <Suspense fallback={null}>
+          <MetaPixel />
+        </Suspense>
         {children}
         <Toaster />
       </body>
