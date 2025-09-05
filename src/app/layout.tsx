@@ -6,7 +6,7 @@ import { MetaPixel } from '@/components/analytics/MetaPixel';
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://canvapro99.com'),
+  metadataBase: new URL('http://canvapro99.pinoyentrepreneur.me'),
   title: 'CanvaPro99 - Lifetime Canva Pro sa halagang ₱99 lang!',
   description: 'Habang-buhay na access sa Canva Pro sa isang-beses na bayad na ₱99 lang. I-unlock ang lahat ng premium features at assets para sa iyong creativity. Mag-avail na!',
   keywords: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Lifetime Canva Pro sa halagang ₱99 lang! | CanvaPro99',
     description: 'I-unlock ang lahat ng premium features at assets ng Canva Pro sa isang-beses na bayad. Walang monthly fees!',
-    url: 'https://canvapro99.com', // Replace with your actual domain
+    url: 'http://canvapro99.pinoyentrepreneur.me',
     siteName: 'CanvaPro99',
     images: [
       {
